@@ -1,0 +1,35 @@
+.footer {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    /*height: 110px;*/
+    padding: 18px 61px 20px;
+
+
+    &__name {
+        font-family: $primary-text;
+        color: $white-three;
+        font-size: 14px;
+        text-align: center;
+        padding: 18px 61px 72px ;
+    }
+    &__logo {
+        height: 40px;
+        width: 103px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+       
+
+
+
+
+
+        
+    }   
+}
+
+
+
