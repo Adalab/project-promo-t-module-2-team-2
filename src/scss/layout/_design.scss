@@ -1,9 +1,7 @@
 .design-color {
   border:0;
-  font-family:$primary-text;
-  background-color: aquamarine;
+  background-image: linear-gradient(to bottom, var(--white-four), var(--white-two) 9%);
   &__unfold {
-
     margin-top: 27px;
     display: flex;
     justify-content: space-between;
@@ -21,6 +19,8 @@
     padding-left: 10px;
     font-size: 18px;
     color: $gunmetal;
+    font-family:$primary-text;
+    font-weight: 600;
     text-transform: uppercase;
   }
   &__arrow {
@@ -36,10 +36,10 @@ justify-content: space-between;
   &__title{
     margin-left: 39px;
     margin-top: 22px;
-    text-transform: uppercase;
-    color: $gunmetal;
     font-size: 14px;
     font-family: $primary-text;
+    color: $gunmetal;
+    text-transform: uppercase;
   }
 }
 .colors{
@@ -121,4 +121,9 @@ justify-content: space-between;
     height:25px;
   }
 
+}
+.separator {
+  margin:0 20px;
+  margin-bottom: 10px;
+  border:1px solid $white-three;
 }
