@@ -1,7 +1,124 @@
-.design__color {
-  border:5px;
+.design-color {
+  border:0;
+  font-family:$primary-text;
   background-color: aquamarine;
+  &__unfold {
+
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__description{
+    display:flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  &__icon {
+    color:$dull-orange;
+  }
+  &__title {
+    padding-left: 10px;
+    font-size: 18px;
+    color: $gunmetal;
+    text-transform: uppercase;
+  }
+  &__arrow {
+    margin-right: 20px;
+    color: $gunmetal;
+  }
 }
-.design-color__title {
-  color:red;
+
+.color-selection {
+display:flex;
+justify-content: space-between;
+
+  &__title{
+    margin-left: 39px;
+    margin-top: 22px;
+    text-transform: uppercase;
+    color: $gunmetal;
+    font-size: 14px;
+    font-family: $primary-text;
+  }
+}
+.colors{
+  margin-top:22px;
+ 
+ }
+
+.color-one{
+  margin-bottom:20px;
+  margin-right: 20px;
+  display:flex;
+  &__radio {
+    background-color:$dull-orange;
+  }
+  &__colored:nth-child(3){
+    margin-left: 10px;
+    background-color:$dark-green-blue;
+    width: 30px;
+    height:25px;
+  }
+  &__colored:nth-child(4){
+    background-color:$dirty-blue;
+    width: 30px;
+    height:25px;
+ 
+  }
+  &__colored:nth-child(5){
+    background-color:$hospital-green;
+    width: 30px;
+    height:25px;
+
+  }
+
+}
+
+.color-two{
+  margin-bottom:20px;
+  margin-right: 20px;
+  display:flex;
+  &__colored:nth-child(3){
+    margin-left: 10px;
+    background-color:$dried-blood;
+    width: 30px;
+    height:25px;
+  }
+  &__colored:nth-child(4){
+    background-color:$rusty-red;
+    width: 30px;
+    height:25px;
+ 
+  }
+  &__colored:nth-child(5){
+    background-color:$tomato;
+    width: 30px;
+    height:25px;
+
+  }
+
+}
+.color-three{
+  margin-bottom:20px;
+  margin-right: 20px;
+  display:flex;
+  &__colored:nth-child(3){
+    margin-left: 10px;
+    background-color:$slate;
+    width: 30px;
+    height:25px;
+  }
+  &__colored:nth-child(4){
+    background-color:$faded-orange;
+    width: 30px;
+    height:25px;
+ 
+  }
+  &__colored:nth-child(5){
+    background-color:$light-grey-blue;
+    width: 30px;
+    height:25px;
+  }
+
 }
