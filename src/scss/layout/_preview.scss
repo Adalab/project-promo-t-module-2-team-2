@@ -1,68 +1,67 @@
 .preview {
     font-family: "Montserrat", sans-serif;
-    background-color: #bfcdd0;
+    background-image: linear-gradient(to bottom, $silver, $pale-grey);
     padding: 38px 35px 40px 45px;
+
+    &__button {
+      width: 75px;
+      height: 30px;
+      border: 1px $white-two solid;
+      border-radius: 15px;
+      background-color: $silver;
+      color: $gunmetal;
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 20px;
+    }
+
+    &__card {
+      height: 329px;
+      width: 240px;
+      background-color: $white-two;
+      padding-top: 21px;
+      padding-bottom: 12px;
+      box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-32;
+      border-radius: 2px;
+
+      &--title {
+        border-left: 5px solid $dirty-blue;
+        margin-bottom: 10px;
+      }
+
+      &--name {
+        padding-left: 15px;
+        color: $dark-green-blue;
+        font-size: 18px;
+      }
+
+      &--job {
+        padding-left: 15px;
+        color: $gunmetal;
+        font-size: 16px;
+      }
+
+      &--nav {
+        margin-top: 10px;
+        margin-left: 20px;
+
+        ul {
+          list-style: none;
+          color: $dark-green-blue;
+          font-size: 18px;
+          display: flex;
+          gap: 10px;
+        }
+
+        li {
+          height: 32px;
+          width: 32px;
+          border: 2px solid $hospital-green;
+          border-radius: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
   }
-  
-  .preview__button {
-    width: 75px;
-    height: 30px;
-    border: 1px white solid;
-    border-radius: 15px;
-    background-color: #bfcdd0;
-    color: #54585a;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    margin-bottom: 20px;
-  }
-  
-  .preview__card {
-    height: 329px;
-    width: 240px;
-    background-color: white;
-    padding-top: 21px;
-    padding-bottom: 12px;
-    box-shadow: 0 1px 10px 0 grey, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    border-radius: 2px;
-  }
-  
-  .preview__card--title {
-    border-left: 5px solid #438792;
-    margin-bottom: 10px;
-  }
-  
-  .preview__card--name {
-    padding-left: 15px;
-    color: #114e4e;
-    font-size: 18px;
-  }
-  
-  .preview__card--job {
-    padding-left: 15px;
-    color: #54585a;
-    font-size: 16px;
-  }
-  
-  .preview__card--nav {
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-  
-  .preview__card--nav ul {
-    list-style: none;
-    color: #114e4e;
-    font-size: 18px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .preview__card--nav li {
-    height: 32px;
-    width: 32px;
-    border: 2px solid #a2deaf;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
