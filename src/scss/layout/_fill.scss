@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__cuadrotexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    color: #114e4e;
+    gap: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.main__form--label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.casillarespuesta, .casillarespuestapequeña {
+    height: 25px;
+    border: solid 1px #a2deaf;
+}
+
+.inlineimg {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.casillarespuestapequeña {
+    width: 25px;
+    height: 25px;
+}
+
+.añadir-imagen {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.botom {
+    background-color: #e17334;
+    border-radius: 3px;
+    text-align: center;
+    width: 130px;
+}
