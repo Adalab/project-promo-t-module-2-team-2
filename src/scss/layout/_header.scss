@@ -4,26 +4,37 @@
   flex-direction: column;
   text-align: center;
 
-
   &__logo {
     height: 63px;
     width: 250px;
     margin-top: 95px;
-    margin-right:35px;
+    margin-right: 35px;
     margin-left: 35px;
     margin-bottom: 35.4px;
-}
-}
-
-@media screen and (min-widht: 768px) {
-  .header__logo {
-  width: 419px;
-  height: 105px;
-  margin-top: 350px;
-  margin-right: 174px;
-  margin-left: 175px;
-  margin-bottom: 31px;
-  
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 419px;
+    height: 105px;
+    margin-top: 350px;
+    margin-right: 174px;
+    margin-left: 175px;
+    margin-bottom: 31px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    background-color: $white-two;
+  }
+  .header__logo {
+    height: 50px;
+    width: 201px;
+    margin-top: 31px;
+    margin-left: 40px;
+    margin-right: 527px;
+    margin-bottom: 30px;
+  }
+}
