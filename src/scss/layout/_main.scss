@@ -2,7 +2,6 @@
   .cardcreator-main {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 30px;
     background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
     width: 100vw;
@@ -14,8 +13,6 @@
     margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 6px;
-    width: 50vw;
-    height: 70vh;
   }
 
   .form {
