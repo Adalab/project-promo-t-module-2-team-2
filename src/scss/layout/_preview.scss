@@ -2,6 +2,10 @@
     font-family: "Montserrat", sans-serif;
     background-image: linear-gradient(to bottom, $silver, $pale-grey);
     padding: 38px 35px 40px 45px;
+    display: grid;
+    grid-template-rows: 45px 329px;
+    justify-content: center;
+    align-content: center;
 
     &__button {
       width: 75px;
