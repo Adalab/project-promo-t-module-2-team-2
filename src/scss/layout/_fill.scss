@@ -4,6 +4,43 @@
     padding: 0;
 }
 
+.fill-color {
+    border: 0;
+    background-image: linear-gradient(to bottom,
+            var(--white-four),
+            var(--white-two) 9%);
+
+    &__unfold {
+        margin-top: 27px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__description {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    &__icon {
+        color: $dull-orange;
+    }
+
+    &__title {
+        padding-left: 10px;
+        font-size: 18px;
+        color: $gunmetal;
+        font-family: $primary-text;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__arrow {
+        margin-right: 20px;
+        color: $gunmetal;
+    }
+}
 .main__cuadrotexto {
     display: flex;
     flex-direction: column;
@@ -14,9 +51,9 @@
 .main__form {
     display: flex;
     flex-direction: column;
-    color: #114e4e;
+    color: $dark-green-blue;
     gap: 30px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-text;
     font-size: 14px;
 }
 
@@ -25,11 +62,13 @@
     flex-direction: column;
     gap: 5px;
     width: 70vw;
+    margin-top: 30px;
 }
 
 .casillarespuesta, .casillarespuestapequeña {
-    height: 25px;
-    border: solid 1px #a2deaf;
+    height: 30px;
+    border: solid 1px $hospital-green;
+    color: $pinkish-grey;
 }
 
 .inlineimg {
@@ -45,11 +84,11 @@
 
 .añadir-imagen {
     text-decoration: none;
-    color: #ffffff;
+    color: $white-two;
 }
 
 .botom {
-    background-color: #e17334;
+    background-color: $dull-orange;
     border-radius: 3px;
     text-align: center;
     width: 130px;
@@ -68,5 +107,11 @@
    .casillarespuesta {
        width: 40vw;
    }
-   
+}
+
+@media screen and (min-width: 1020px) {
+    .casillarespuesta{
+      width: 40vw;
+    }
+    
 }
