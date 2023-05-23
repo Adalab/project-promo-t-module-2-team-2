@@ -16,10 +16,13 @@
   border-radius: 4px;
   width: 268px;
   height: 73.8px;
-  border: solid 1.6px $dull-orange;
+  border: 1px solid rgba(225, 115, 52, .21);
+  
   display: flex;
   justify-content: center;
-  margin: 30px auto;
+  margin: auto;
+  margin-top: 17.8px;
+  margin-bottom: 38.6px;
   gap: 35px;
   align-items: center;
 }
@@ -30,6 +33,8 @@
   font-size: 16px;
   background-color: $dirty-blue;
   border: none;
+  
+  
 }
 .button_2 {
   display: flex;
@@ -40,6 +45,8 @@
   height: 42px;
   border-radius: 21px;
   background-color: $dirty-blue;
+  a{text-decoration: none;
+  color: $white-two;}
 }
 .item_main {
   font-size: 22.4px;
@@ -55,4 +62,27 @@
 
 main{
     background-color: $white-four;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px){
+  .title_main {
+    font-size: 24px;
+  }
+  .main_text {
+    font-size: 16px;
+    padding-bottom: 27px;
+  }
+  .item_main {
+    font-size: 28px;
+  }
+  .item_main2 {
+    font-size: 16px;
+  }
+  .button_2{
+    margin-top: 186px;
+  }
+  main{
+    padding-bottom: 59px;
+  }
 }
