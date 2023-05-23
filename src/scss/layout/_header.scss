@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 
   &__logo {
     height: 63px;
@@ -12,7 +11,6 @@
     margin-right: 35px;
     margin-left: 35px;
     margin-bottom: 35.4px;
-   
   }
 }
 
@@ -27,21 +25,17 @@
   }
 }
 
+/*DESKTOP profile-cards*/
 @media screen and (min-width: 1200px) {
   .header {
     background-color: $white-two;
     height: 111px;
     align-items: flex-start;
-  
-    
-   
   }
   .header__logo {
     height: 50px;
     width: 201px;
     margin-top: 31px;
     margin-bottom: 30px;
-    
-  
   }
 }
