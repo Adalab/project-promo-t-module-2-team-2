@@ -21,6 +21,14 @@
   .form {
     width: 50vw;
   }
+
+  .main__cuadrotexto {
+        margin-left: 300px;
+    }
+    
+   .casillarespuesta {
+       width: 40vw;
+   }
 }
 
 @media screen and (min-width: 1024px) {
@@ -31,4 +39,12 @@
       .form {
         width: 35vw;
       }
+
+     .main__cuadrotexto {
+        margin-left: 500px;
+        }
+        
+    .casillarespuesta{
+      width: 30vw;
+    }
 }

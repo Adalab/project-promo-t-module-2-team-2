@@ -98,20 +98,3 @@
     border: 1px solid $white-three;
     margin-top: 40px;
 }
-
-@media screen and (min-width: 768px) {
-    .main__cuadrotexto {
-        margin-left: 300px;
-    }
-    
-   .casillarespuesta {
-       width: 40vw;
-   }
-}
-
-@media screen and (min-width: 1020px) {
-    .casillarespuesta{
-      width: 40vw;
-    }
-    
-}
