@@ -28,6 +28,7 @@
   &__arrow {
     margin-right: 20px;
     color: $gunmetal;
+
   }
 }
 
@@ -49,9 +50,7 @@
 }
 .colors {
   margin-top: 22px;
-  @media screen and (min-width: 768px) {
-    margin-right: 30px;
-  }
+
 }
 
 .color-one {
