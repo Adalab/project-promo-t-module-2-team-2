@@ -1,71 +1,70 @@
-.preview {
-    font-family: "Montserrat", sans-serif;
-    background-image: linear-gradient(to bottom, $silver, $pale-grey);
-    padding: 38px 35px 40px 45px;
-    display: grid;
-    grid-template-rows: 45px 329px;
-    justify-content: center;
-    align-content: center;
+@include bluedesign;
 
-    &__button {
-      width: 75px;
-      height: 30px;
-      border: 1px $white-two solid;
-      border-radius: 15px;
-      background-color: $silver;
-      color: $gunmetal;
-      font-size: 12px;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 20px;
+.preview {
+
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(to bottom, $silver, $pale-grey);
+  padding: 38px 35px 40px 45px;
+  display: grid;
+  grid-template-rows: 45px 329px;
+  justify-content: center;
+  align-content: center;
+
+  &__button {
+    width: 75px;
+    height: 30px;
+    border: 1px $white-two solid;
+    border-radius: 15px;
+    background-color: $silver;
+    color: $gunmetal;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+  }
+
+  &__card {
+    height: 329px;
+    width: 240px;
+    background-color: $white-two;
+    padding-top: 21px;
+    padding-bottom: 12px;
+    box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-32;
+    border-radius: 2px;
+
+    &--title {
+      margin-bottom: 10px;
     }
 
-    &__card {
-      height: 329px;
-      width: 240px;
-      background-color: $white-two;
-      padding-top: 21px;
-      padding-bottom: 12px;
-      box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-32;
-      border-radius: 2px;
+    &--name {
+      padding-left: 15px;
+      font-size: 18px;
+    }
 
-      &--title {
-        border-left: 5px solid $dirty-blue;
-        margin-bottom: 10px;
-      }
+    &--job {
+      padding-left: 15px;
+      color: $gunmetal;
+      font-size: 16px;
+    }
 
-      &--name {
-        padding-left: 15px;
-        color: $dark-green-blue;
+    &--nav {
+      margin-top: 10px;
+      margin-left: 20px;
+
+      ul {
+        list-style: none;
         font-size: 18px;
+        display: flex;
+        gap: 10px;
       }
 
-      &--job {
-        padding-left: 15px;
-        color: $gunmetal;
-        font-size: 16px;
-      }
-
-      &--nav {
-        margin-top: 10px;
-        margin-left: 20px;
-
-        ul {
-          list-style: none;
-          color: $dark-green-blue;
-          font-size: 18px;
-          display: flex;
-          gap: 10px;
-        }
-
-        li {
-          height: 32px;
-          width: 32px;
-          border: 2px solid $hospital-green;
-          border-radius: 16px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      li {
+        height: 32px;
+        width: 32px;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
+}
