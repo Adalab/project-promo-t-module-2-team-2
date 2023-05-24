@@ -1,7 +1,4 @@
-@include bluedesign;
-
 .preview {
-
   font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(to bottom, $silver, $pale-grey);
   padding: 38px 35px 40px 45px;
@@ -64,6 +61,69 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+    }
+  }
+}
+
+.bluedesign {
+  .preview {
+    &__card {
+      &--title {
+        border-left: 5px solid $dirty-blue;
+      }
+      &--name {
+        color: $dark-green-blue;
+      }
+      &--nav {
+        ul {
+          color: $dark-green-blue;
+        }
+        li {
+          border: 2px solid $hospital-green;
+        }
+      }
+    }
+  }
+}
+
+.reddesign {
+  .preview {
+    &__card {
+      &--title {
+        border-left: 5px solid $rusty-red;
+      }
+      &--name {
+        color: $dried-blood;
+      }
+      &--nav {
+        ul {
+          color: $dried-blood;
+        }
+        li {
+          border: 2px solid $tomato;
+        }
+      }
+    }
+  }
+}
+
+.greydesign {
+  .preview {
+    &__card {
+      &--title {
+        border-left: 5px solid $faded-orange;
+      }
+      &--name {
+        color: $slate;
+      }
+      &--nav {
+        ul {
+          color: $slate;
+        }
+        li {
+          border: 2px solid $light-grey-blue;
+        }
       }
     }
   }

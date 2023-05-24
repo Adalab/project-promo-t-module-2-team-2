@@ -20,7 +20,6 @@
     &__description {
         display: flex;
         align-items: center;
-        margin-left: 20px;
     }
 
     &__icon {
@@ -37,15 +36,12 @@
     }
 
     &__arrow {
-        margin-right: 20px;
         color: $gunmetal;
     }
 }
 
 .fill {
     border: none;
-    margin-left: 20px;
-    margin-right: 19px;
     font-family: $primary-text;
     font-size: 14px;
 }
@@ -87,13 +83,16 @@
 }
 
 .botom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $dull-orange;
     border-radius: 3px;
-    text-align: center;
     width: 130px;
 }
 
 .separator {
     border: 1px solid $white-three;
+    width: 329px;
     margin-top: 40px;
 }
