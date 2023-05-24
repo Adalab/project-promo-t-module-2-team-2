@@ -46,7 +46,8 @@
     border: none;
     margin-left: 20px;
     margin-right: 19px;
-
+    font-family: $primary-text;
+    font-size: 14px;
 }
 
 .main__form {
@@ -54,10 +55,6 @@
     flex-direction: column;
     align-items: center;
     color: $dark-green-blue;
-    font-family: $primary-text;
-    font-size: 14px;
-    
-
 }
 
 .main__form--label {
