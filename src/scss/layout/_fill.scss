@@ -63,6 +63,9 @@
 .casillarespuesta, .casillarespuestapequeña {
     height: 30px;
     border: solid 1px $hospital-green;
+}
+
+input::placeholder {
     color: $pinkish-grey;
 }
 
