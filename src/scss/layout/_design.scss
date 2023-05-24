@@ -121,10 +121,10 @@
 
 .palette1 {
   .preview__card--title {
-    background-color: $dirty-blue;
+    border-color: $dirty-blue;
   }
   .preview__card--name {
-    background-color: $dark-green-blue;
+    color: $dark-green-blue;
   }
   .preview__card--nav li {
     border-color: $hospital-green;
@@ -135,11 +135,11 @@
 }
 .palette2 {
   .preview__card--title {
-  background-color: $rusty-red;
+  border-color: $rusty-red;
   }
 
   .preview__card--name {
-    background-color: $dried-blood;
+    color: $dried-blood;
   }
 
   .preview__card--nav li {
@@ -152,11 +152,11 @@
 }
 .palette3 {
   .preview__card--title {
-  background-color: $faded-orange;
+  border-color: $faded-orange;
   }
 
   .preview__card--name {
-    background-color: $slate;
+    color: $slate;
   }
 
   .preview__card--nav li {
