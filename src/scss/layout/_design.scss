@@ -101,3 +101,52 @@
   margin-bottom: 10px;
   border: 1px solid $white-three;
 }
+
+.palette1 {
+  .preview__card--title {
+    border-color: $dirty-blue;
+  }
+  .preview__card--name {
+    color: $dark-green-blue;
+  }
+  .preview__card--nav li {
+    border-color: $hospital-green;
+  }
+  .preview__card--nav ul {
+    color: $dark-green-blue;
+  }
+}
+.palette2 {
+  .preview__card--title {
+  border-color: $rusty-red;
+  }
+
+  .preview__card--name {
+    color: $dried-blood;
+  }
+
+  .preview__card--nav li {
+    border-color: $tomato;
+  }
+
+  .preview__card--nav ul {
+    color: $rusty-red;
+  }
+}
+.palette3 {
+  .preview__card--title {
+  border-color: $faded-orange;
+  }
+
+  .preview__card--name {
+    color: $slate;
+  }
+
+  .preview__card--nav li {
+    border-color: $light-grey-blue;
+  }
+
+  .preview__card--nav ul {
+    color: $faded-orange;
+  }
+}
