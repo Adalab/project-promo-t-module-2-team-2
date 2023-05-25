@@ -96,8 +96,11 @@ input::placeholder {
 
 .separator {
     border: 1px solid $white-three;
-    width: 329px;
+    width: 87.5vw;
     margin-top: 40px;
+    @media screen and (min-width: 768px) {
+        width: 329px;
+    }
 }
 
 .collapsed {
