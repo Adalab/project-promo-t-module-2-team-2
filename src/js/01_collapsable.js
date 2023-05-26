@@ -1,14 +1,11 @@
 'use strict';
-
 // variables
-
-const designUnfold = document.querySelector('.design-color__unfold');
-const designForm = document.querySelector('.color-selection');
-const fillUnfold = document.querySelector('.fill-color__unfold');
-const fillForm = document.querySelector('collapsed');
+const designUnfold = document.querySelector('.js_design-color__unfold');
+const designForm = document.querySelector('.js_color-selection');
+const fillUnfold = document.querySelector('.js_fill-color__unfold');
+const fillForm = document.querySelector('.js_fillform');
 
 // funciones
-
 function handleClickDesignUnfold(event) {
   event.preventDefault();
   if (designForm.classList.contains('collapsed')) {
@@ -18,7 +15,6 @@ function handleClickDesignUnfold(event) {
     designForm.classList.add('collapsed');
   }
 }
-
 function handleClickFillUnfold(event) {
   event.preventDefault();
   if (fillForm.classList.contains('collapsed')) {
@@ -30,6 +26,5 @@ function handleClickFillUnfold(event) {
 }
 
 //eventos
-
 designUnfold.addEventListener('click', handleClickDesignUnfold);
 fillUnfold.addEventListener('click', handleClickFillUnfold);
