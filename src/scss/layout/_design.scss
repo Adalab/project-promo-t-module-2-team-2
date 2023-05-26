@@ -136,11 +136,11 @@
     color: $dark-green-blue;
   }
 
-  .preview__card--nav li {
+  .preview__card--nav li  {
     border-color: $hospital-green;
   }
 
-  .preview__card--nav ul {
+  .preview__card--nav .pIcon {
     color: $dark-green-blue;
   }
 }
@@ -158,7 +158,7 @@
     border-color: $tomato;
   }
 
-  .preview__card--nav ul {
+  .preview__card--nav .pIcon {
     color: $rusty-red;
   }
 }
@@ -176,7 +176,7 @@
     border-color: $light-grey-blue;
   }
 
-  .preview__card--nav ul {
+  .preview__card--nav .pIcon {
     color: $faded-orange;
   }
 }
