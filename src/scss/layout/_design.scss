@@ -1,0 +1,156 @@
+.design-color {
+  border: 0;
+  &__unfold {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    color: $dull-orange;
+  }
+  &__title {
+    padding-left: 10px;
+    font-size: 18px;
+    color: $gunmetal;
+    font-family: $primary-text;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__arrow {
+    color: $gunmetal;
+  }
+}
+
+.color-selection {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    margin-top: 22px;
+    font-size: 14px;
+    font-family: $primary-text;
+    color: $gunmetal;
+    text-transform: uppercase;
+  }
+}
+.colors {
+  margin-top: 22px;
+}
+
+.color-one {
+  margin-bottom: 20px;
+  display: flex;
+  &__colored {
+    width: 30px;
+    height: 25px;
+    &:nth-child(3) {
+      margin-left: 10px;
+      background-color: $dark-green-blue;
+    }
+    &:nth-child(4) {
+      background-color: $dirty-blue;
+    }
+    &:nth-child(5) {
+      background-color: $hospital-green;
+    }
+  }
+}
+
+.color-two {
+  margin-bottom: 20px;
+  display: flex;
+  &__colored {
+    width: 30px;
+    height: 25px;
+    &:nth-child(3) {
+      margin-left: 10px;
+      background-color: $dried-blood;
+    }
+    &:nth-child(4) {
+      background-color: $rusty-red;
+    }
+    &:nth-child(5) {
+      background-color: $tomato;
+    }
+  }
+}
+.color-three {
+  margin-bottom: 20px;
+  display: flex;
+  &__colored {
+    width: 30px;
+    height: 25px;
+    &:nth-child(3) {
+      margin-left: 10px;
+      background-color: $slate;
+    }
+    &:nth-child(4) {
+      background-color: $faded-orange;
+    }
+    &:nth-child(5) {
+      background-color: $light-grey-blue;
+    }
+  }
+}
+.separator {
+  margin-bottom: 10px;
+  border: 1px solid $white-three;
+}
+
+.palette1 {
+  .preview__card--title {
+    border-color: $dirty-blue;
+  }
+  .preview__card--name {
+    color: $dark-green-blue;
+  }
+  .preview__card--nav li {
+    border-color: $hospital-green;
+  }
+  .preview__card--nav ul {
+    color: $dark-green-blue;
+  }
+}
+.palette2 {
+  .preview__card--title {
+  border-color: $rusty-red;
+  }
+
+  .preview__card--name {
+    color: $dried-blood;
+  }
+
+  .preview__card--nav li {
+    border-color: $tomato;
+  }
+
+  .preview__card--nav ul {
+    color: $rusty-red;
+  }
+}
+.palette3 {
+  .preview__card--title {
+  border-color: $faded-orange;
+  }
+
+  .preview__card--name {
+    color: $slate;
+  }
+
+  .preview__card--nav li {
+    border-color: $light-grey-blue;
+  }
+
+  .preview__card--nav ul {
+    color: $faded-orange;
+  }
+}
+
+.collapsed {
+  display: none;
+}

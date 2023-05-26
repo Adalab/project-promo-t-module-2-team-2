@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fill-color {
+    border: 0;
+    background-image: linear-gradient(to bottom,
+            var(--white-four),
+            var(--white-two) 9%);
+
+    &__unfold {
+        margin-top: 27px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__description {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        color: $dull-orange;
+    }
+
+    &__title {
+        padding-left: 10px;
+        font-size: 18px;
+        color: $gunmetal;
+        font-family: $primary-text;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__arrow {
+        color: $gunmetal;
+    }
+}
+
+.fill {
+    border: none;
+    font-family: $primary-text;
+    font-size: 14px;
+}
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $dark-green-blue;
+}
+
+.main__form--label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.casillarespuesta, .casillarespuestapequeña {
+    height: 30px;
+    border: solid 1px $hospital-green;
+}
+
+input::placeholder {
+    color: $pinkish-grey;
+}
+
+.inlineimg {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.casillarespuestapequeña {
+    width: 25px;
+    height: 25px;
+}
+
+.añadir-imagen {
+    text-decoration: none;
+    color: $white-two;
+}
+
+.botom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dull-orange;
+    border-radius: 3px;
+    width: 130px;
+}
+
+.separator {
+    border: 1px solid $white-three;
+    width: 329px;
+    margin-top: 40px;
+}
+
+.collapsed {
+    display: none;
+  }
