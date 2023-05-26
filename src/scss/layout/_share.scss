@@ -1,0 +1,26 @@
+
+.share-button {
+    position: relative;
+  
+    &__trigger {
+      background-color: white;
+      color: orangered;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    &__dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: #f1f1f1;
+      list-style-type: none;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
