@@ -6,6 +6,7 @@
     border: none;
     font-family: $primary-text;
     font-size: 14px;
+    cursor: pointer;
 
     &__unfold {
         margin-top: 27px;
@@ -55,10 +56,12 @@
 .casillarespuestapequeña {
     height: 30px;
     border: solid 1px $hospital-green;
+    
 }
 
 input::placeholder {
     color: $pinkish-grey;
+    font-family: $primary-text;
 }
 
 .inlineimg {
