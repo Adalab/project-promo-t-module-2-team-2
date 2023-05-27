@@ -1,8 +1,11 @@
-.fill-color {
+.fill {
     border: 0;
     background-image: linear-gradient(to bottom,
             var(--white-four),
             var(--white-two) 9%);
+    border: none;
+    font-family: $primary-text;
+    font-size: 14px;
 
     &__unfold {
         margin-top: 27px;
@@ -32,12 +35,6 @@
     &__arrow {
         color: $gunmetal;
     }
-}
-
-.fill {
-    border: none;
-    font-family: $primary-text;
-    font-size: 14px;
 }
 
 .main__form {
