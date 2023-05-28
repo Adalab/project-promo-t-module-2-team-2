@@ -43,20 +43,24 @@
     flex-direction: column;
     align-items: center;
     color: $dark-green-blue;
-}
-
-.main__form--label {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 30px;
-}
-
-.casillarespuesta,
-.casillarespuestapequeña {
-    height: 30px;
-    border: solid 1px $hospital-green;
     
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 30px;
+}
+}
+
+.casillarespuesta {
+    height: 30px;
+    border: solid 1px $hospital-green; 
+}
+
+.casillarespuestapequeña {
+    width: 25px;
+    height: 25px;
+    border: solid 1px $hospital-green;
 }
 
 input::placeholder {
@@ -68,11 +72,6 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-
-.casillarespuestapequeña {
-    width: 25px;
-    height: 25px;
 }
 
 .añadir-imagen {
