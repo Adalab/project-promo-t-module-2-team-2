@@ -38,18 +38,18 @@
     }
 }
 
-.main__form {
+.main-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: $dark-green-blue;
-    
+
     &__label {
         display: flex;
         flex-direction: column;
         gap: 5px;
         margin-top: 30px;
-}
+    }
 }
 
 .casillarespuesta {
