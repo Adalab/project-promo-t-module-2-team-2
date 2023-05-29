@@ -1,4 +1,4 @@
-<fieldset class="fill">
+<fieldset class="fill js_fill">
         <div class="fill__unfold js_fill-color__unfold">
             <div class="fill__description">
                 <i class="fa-solid fa-keyboard" style="color: #e17334;"></i>
@@ -30,11 +30,11 @@
                 <label class="main-form__label" for="email">
                     <span class="main-form__span">Email</span>
                     <input class="casillarespuesta js-mail" type="email" id="email" name="email"
-                        placeholder="Ej: sally-hill@gmail.com" required />
+                        placeholder="Ej: sally-hill@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
                 </label>
                 <label class="main-form__label" for="phone" class="main__form--tlf">
                     <span class="main-form__span">Teléfono</span>
-                    <input class="casillarespuesta" type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55" />
+                    <input class="casillarespuesta" type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55" pattern="[0-9]{9}" required/>
                 </label>
                 <label class="main-form__label" for="linkedin">
                     <span class="main-form__span">Linkedin</span>

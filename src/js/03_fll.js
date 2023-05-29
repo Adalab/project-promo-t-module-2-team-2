@@ -1,5 +1,7 @@
 'use strict';
 
+const { render } = require("node-sass");
+
 //variables
 const inputName = document.querySelector ('.js-name');
 const previewName = document.querySelector ('.js-preview-name');
@@ -11,10 +13,35 @@ const inputLinkedin = document.querySelector ('.js-linkedin');
 const previewLinkedin = document.querySelector ('.js_linkedin');
 const inputGithub = document.querySelector ('.js-github');
 const previewGithub = document.querySelector ('.js_github');
+const fill = document.querySelector ('.js_fill');
+const data = {
+  palette: '',
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
+};
 
 
 //funciones
-function handlerInputName (event){
+function handlerInputs (event) {
+  const idInput = event.target.id;
+  const valueInput = event.target.value;
+  data[idInput] = valueInput;
+  renderPreview();
+}
+function renderPreview (){
+  previewName.innerHTML = data.name;
+  previewJob.innerHTML = data.job;
+  previewMail.href = `mailto:${data.email}`;
+  previewLinkedin.href = `http://linkedin.com/company/${data.linkedin}`;
+  previewGithub.href = `http://github.com/${data.github}`;
+
+}
+/*function handlerInputName (event){
   const inputValue = event.target.value;
   previewName.innerHTML = inputValue;
 }
@@ -45,3 +72,5 @@ inputJob.addEventListener('input', handlerInputJob);
 inputMail.addEventListener('input', handlerInputMail);
 inputLinkedin.addEventListener('input', handlerInputLinkedin);
 inputGithub.addEventListener('input', handlerInputGithub);
+*/
+fill.addEventListener("keyup",handlerInputs);
