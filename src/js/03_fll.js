@@ -3,17 +3,17 @@
 
 
 //variables
-const previewName = document.querySelector ('.js-preview-name');
-const previewJob = document.querySelector ('.js-preview-job');
-const previewMail = document.querySelector ('.js_mail');
-const previewLinkedin = document.querySelector ('.js_linkedin');
-const previewGithub = document.querySelector ('.js_github');
-const fill = document.querySelector ('.js_fill');
+const previewName = document.querySelector('.js-preview-name');
+const previewJob = document.querySelector('.js-preview-job');
+const previewMail = document.querySelector('.js_mail');
+const previewLinkedin = document.querySelector('.js_linkedin');
+const previewGithub = document.querySelector('.js_github');
+const fill = document.querySelector('.js_fill');
 
 const data = {
   palette: '',
-  name: '',
-  job: '',
+  name: previewName.textContent,
+  job: previewJob.textContent,
   phone: '',
   email: '',
   linkedin: '',
