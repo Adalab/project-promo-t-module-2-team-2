@@ -1,7 +1,5 @@
 .share{
     border: 0;
-    display: flex;
-    justify-content: center;
     &__unfold {
       margin-top: 27px;
       display: flex;
@@ -26,6 +24,11 @@
     &__arrow {
       color: $gunmetal;
     }
+  }
+  .section_share{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .Crear-tarjeta {
@@ -74,30 +77,37 @@ padding-right: 9px;
   flex-direction:column-reverse;
 }
 
-.separador{
-  border: 1px solid #d8d8d8;
-  width: 329px;
+.separator2 {
+  border: 1px solid $white-three;
+  width: 87.5vw;
   margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+      width: 329px;
+  }
 }
 
 .twitter{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: #00a0f5;
   margin:13px 50px 30px;
   border-radius: 5px;
-  padding: 10px;
   border-color: transparent;
   font-family: $primary-text;
   width: 181px;
   height: 30px;
+  &-i{
+    color: $white-two;
+  }
 }
 
 .url1{
+ 
   color:#ffffff;
   text-decoration: none;
-  margin-bottom: 10px;
   font-size: 14px;
 }
 
@@ -115,8 +125,7 @@ padding-right: 9px;
 .iconot{
   width: 18px;
   height: 18px;
-  margin-right: 160px;
-  margin-top: -25px;
+ 
 }
 
 .card{
