@@ -10,6 +10,7 @@ const previewLinkedin = document.querySelector('.js_linkedin');
 const previewGithub = document.querySelector('.js_github');
 const fill = document.querySelector('.js_fill');
 
+
 const data = {
   palette: '',
   name: previewName.textContent,
