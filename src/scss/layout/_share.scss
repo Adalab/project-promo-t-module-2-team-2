@@ -34,7 +34,7 @@
   .Crear-tarjeta {
     text-decoration: none;
     font-family: $primary-text;
-    font-size: 13px;
+    font-size: 18px;
     color:#ffffff;
   
 }
@@ -46,10 +46,10 @@
   background-color: #d5d5d5;
   width: 200px;
   margin: auto;
-  margin-top:30px;
+  margin-top: 30px;
   padding: 10px;
   border-radius: 12px;
-  border-color: transparent;
+  border-style: none;
 
   &-i {
 color: $white-two;
@@ -73,14 +73,15 @@ padding-right: 9px;
   color:#54585a;
   padding-top: 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction:column-reverse;
 }
 
 .separator2 {
   border: 1px solid $white-three;
   width: 87.5vw;
   margin-top: 40px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
       width: 329px;
@@ -91,46 +92,24 @@ padding-right: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background-color: #00a0f5;
-  margin:13px 50px 30px;
+  margin: auto;
+  gap: 9.5px;
+  background-color: $azure;
+  margin-top: 13px;
   border-radius: 5px;
-  border-color: transparent;
+  border-style: none;
   font-family: $primary-text;
   width: 181px;
   height: 30px;
+  font-size: 14px;
   &-i{
     color: $white-two;
   }
 }
 
-.url1{
+.url-twitter{
  
   color:#ffffff;
   text-decoration: none;
   font-size: 14px;
-}
-
-.fab{
-  color:#ffffff;
-}
-
-.separador2{
-  border: 1px solid #d8d8d8;
-  width: 329px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.iconot{
-  width: 18px;
-  height: 18px;
- 
-}
-
-.card{
-  width: 25px;
-  height: 22px;
-  margin-right: 10px;
-
 }
