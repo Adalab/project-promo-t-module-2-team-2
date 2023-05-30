@@ -1,0 +1,115 @@
+.share{
+    border: 0;
+    &__unfold {
+      margin-top: 27px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__description {
+      display: flex;
+      align-items: center;
+    }
+    &__icon {
+      color: $dull-orange;
+    }
+    &__title {
+      padding-left: 10px;
+      font-size: 18px;
+      color: $gunmetal;
+      font-family: $primary-text;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    &__arrow {
+      color: $gunmetal;
+    }
+  }
+
+  .Crear-tarjeta {
+    text-decoration: none;
+    font-family: $primary-text;
+    font-size: 13px;
+    color:#ffffff;
+  
+}
+
+.botom-share{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d5d5d5;
+  width: 200px;
+  margin: auto;
+  margin-top:30px;
+  padding: 10px;
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+.url{
+  color:#e17334;
+  display: flex;
+  align-items: center;
+  flex-direction:column-reverse;
+  font-size: 12px;
+}
+
+.tarjeta{
+  font-family: $primary-text;
+  font-size: 18px;
+  color:#54585a;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction:column-reverse;
+}
+
+.separador{
+  border: 1px solid #d8d8d8;
+  width: 329px;
+  margin-top: 40px;
+}
+
+.twitter{
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-color: #00a0f5;
+  margin:13px 50px 30px;
+  border-radius: 5px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+.url1{
+  color:#ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.fab{
+  color:#ffffff;
+}
+
+.separador2{
+  border: 1px solid #d8d8d8;
+  width: 329px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.iconot{
+  width: 18px;
+  height: 18px;
+  margin-right: 160px;
+  margin-top: -25px;
+}
+
+.card{
+  width: 25px;
+  height: 22px;
+  margin-right: 10px;
+
+}
