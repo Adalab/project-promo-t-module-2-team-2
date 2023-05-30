@@ -6,6 +6,10 @@ const fillUnfold = document.querySelector('.js_fill-color__unfold');
 const fillForm = document.querySelector('.js_fillform');
 const fillArrow = document.querySelector('.js_arrow_fill');
 const designArrow =document.querySelector('.js_arrow_design');
+const shareUnfold = document.querySelector('.js_share__unfold');
+const shareArrow = document.querySelector('.js_share__arrow');
+const shareForm = document.querySelector('.js_share');
+
 
 // funciones
 function handleClickDesignUnfold(event) {
@@ -32,13 +36,22 @@ function handleClickFillUnfold(event) {
     fillArrow.classList.remove('arrowUp');
   }
 }
-// function arrowRotate() {
-//   if(designForm.classList.add('collapsed');)
-//   fillArrow.classList.add('arrowUp');
-//   }
+function handleClickShareUnfold(event) {
+  event.preventDefault();
+  if (shareForm.classList.contains('collapsed')) {
+    shareForm.classList.remove('collapsed');
+    shareArrow.classList.add('arrowUp');
+    designForm.classList.add('collapsed');
+    designArrow.classList.remove('arrowUp');
+    fillForm.classList.add('collapsed');
+  } else {
+    shareForm.classList.add('collapsed');
+    shareArrow.classList.remove('arrowUp');
+  }
+}
 
-// }
 
 //eventos
 designUnfold.addEventListener('click', handleClickDesignUnfold);
 fillUnfold.addEventListener('click', handleClickFillUnfold);
+shareUnfold.addEventListener('click', handleClickShareUnfold);
