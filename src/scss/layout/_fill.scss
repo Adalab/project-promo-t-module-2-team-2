@@ -1,14 +1,12 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.fill-color {
+.fill {
     border: 0;
     background-image: linear-gradient(to bottom,
             var(--white-four),
             var(--white-two) 9%);
+    border: none;
+    font-family: $primary-text;
+    font-size: 14px;
+    cursor: pointer;
 
     &__unfold {
         margin-top: 27px;
@@ -40,44 +38,40 @@
     }
 }
 
-.fill {
-    border: none;
-    font-family: $primary-text;
-    font-size: 14px;
-}
-
-.main__form {
+.main-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: $dark-green-blue;
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 30px;
+    }
 }
 
-.main__form--label {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 30px;
-}
-
-.casillarespuesta, .casillarespuestapequeña {
+.casillarespuesta {
     height: 30px;
+    border: solid 1px $hospital-green; 
+}
+
+.casillarespuestapequeña {
+    width: 25px;
+    height: 25px;
     border: solid 1px $hospital-green;
 }
 
 input::placeholder {
     color: $pinkish-grey;
+    font-family: $primary-text;
 }
 
 .inlineimg {
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-
-.casillarespuestapequeña {
-    width: 25px;
-    height: 25px;
 }
 
 .añadir-imagen {
@@ -96,10 +90,17 @@ input::placeholder {
 
 .separator {
     border: 1px solid $white-three;
-    width: 329px;
+    width: 87.5vw;
     margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        width: 329px;
+    }
 }
 
 .collapsed {
     display: none;
-  }
+}
+.arrowUp {
+    transform: rotate(180deg);
+}

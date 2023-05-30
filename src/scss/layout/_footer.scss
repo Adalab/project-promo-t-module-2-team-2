@@ -5,11 +5,14 @@
   border-top: 1px solid $white-three;
   height: 110px;
   align-items: center;
+ 
+  
+  
 
   &__name {
     font-family: $primary-text;
     color: $brownish-grey;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 18px 61px 12px 61px;
   }
   &__logo {
@@ -33,9 +36,10 @@
       margin-left: 41px;
       margin-top: 18px;
       margin-bottom: 22px;
-      font-size: 14px;
+      font-size: 0.875rem;
+      
       white-space: nowrap;
-      color: $brownish-grey;
+      
     }
     &__logo {
       margin-top: 10px;

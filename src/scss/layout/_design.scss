@@ -1,18 +1,22 @@
 .design-color {
   border: 0;
+
   &__unfold {
     margin-top: 27px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__description {
     display: flex;
     align-items: center;
   }
+
   &__icon {
     color: $dull-orange;
   }
+
   &__title {
     padding-left: 10px;
     font-size: 18px;
@@ -21,9 +25,11 @@
     font-weight: 600;
     text-transform: uppercase;
   }
+
   &__arrow {
     color: $gunmetal;
   }
+  cursor: pointer;
 }
 
 .color-selection {
@@ -38,6 +44,7 @@
     text-transform: uppercase;
   }
 }
+
 .colors {
   margin-top: 22px;
 }
@@ -45,16 +52,20 @@
 .color-one {
   margin-bottom: 20px;
   display: flex;
+
   &__colored {
     width: 30px;
     height: 25px;
+
     &:nth-child(3) {
       margin-left: 10px;
       background-color: $dark-green-blue;
     }
+
     &:nth-child(4) {
       background-color: $dirty-blue;
     }
+
     &:nth-child(5) {
       background-color: $hospital-green;
     }
@@ -64,61 +75,80 @@
 .color-two {
   margin-bottom: 20px;
   display: flex;
+
   &__colored {
     width: 30px;
     height: 25px;
+
     &:nth-child(3) {
       margin-left: 10px;
       background-color: $dried-blood;
     }
+
     &:nth-child(4) {
       background-color: $rusty-red;
     }
+
     &:nth-child(5) {
       background-color: $tomato;
     }
   }
 }
+
 .color-three {
   margin-bottom: 20px;
   display: flex;
+
   &__colored {
     width: 30px;
     height: 25px;
+
     &:nth-child(3) {
       margin-left: 10px;
       background-color: $slate;
     }
+
     &:nth-child(4) {
       background-color: $faded-orange;
     }
+
     &:nth-child(5) {
       background-color: $light-grey-blue;
     }
   }
 }
+
 .separator {
-  margin-bottom: 10px;
   border: 1px solid $white-three;
+  width: 87.5vw;
+  margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 329px;
+  }
 }
 
 .palette1 {
   .preview__card--title {
     border-color: $dirty-blue;
   }
+
   .preview__card--name {
     color: $dark-green-blue;
   }
-  .preview__card--nav li {
+
+  .preview__card--nav li  {
     border-color: $hospital-green;
   }
-  .preview__card--nav ul {
+
+  .preview__card--nav .pIcon {
     color: $dark-green-blue;
   }
 }
+
 .palette2 {
   .preview__card--title {
-  border-color: $rusty-red;
+    border-color: $rusty-red;
   }
 
   .preview__card--name {
@@ -129,13 +159,14 @@
     border-color: $tomato;
   }
 
-  .preview__card--nav ul {
+  .preview__card--nav .pIcon {
     color: $rusty-red;
   }
 }
+
 .palette3 {
   .preview__card--title {
-  border-color: $faded-orange;
+    border-color: $faded-orange;
   }
 
   .preview__card--name {
@@ -146,7 +177,7 @@
     border-color: $light-grey-blue;
   }
 
-  .preview__card--nav ul {
+  .preview__card--nav .pIcon {
     color: $faded-orange;
   }
 }
