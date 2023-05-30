@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
   }
 
   &__description {
@@ -29,7 +30,6 @@
   &__arrow {
     color: $gunmetal;
   }
-  cursor: pointer;
 }
 
 .color-selection {
@@ -121,7 +121,8 @@
 .separator {
   border: 1px solid $white-three;
   width: 87.5vw;
-  margin-top: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
     width: 329px;

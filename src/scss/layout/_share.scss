@@ -1,10 +1,10 @@
 .share{
     border: 0;
     &__unfold {
-      margin-top: 27px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
     }
     &__description {
       display: flex;
@@ -43,14 +43,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d5d5d5;
+  background-color: $dull-orange;
   width: 200px;
   margin: auto;
   margin-top: 30px;
   padding: 10px;
   border-radius: 12px;
   border-style: none;
-
+margin-bottom: 20px;
   &-i {
 color: $white-two;
 padding-right: 9px;
@@ -58,7 +58,7 @@ padding-right: 9px;
 }
 
 .url{
-  color:#e17334;
+  color: $dull-orange;
   display: flex;
   align-items: center;
   flex-direction:column-reverse;
@@ -80,8 +80,8 @@ padding-right: 9px;
 .separator2 {
   border: 1px solid $white-three;
   width: 87.5vw;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
       width: 329px;
