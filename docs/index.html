@@ -4,64 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/960132646f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
     <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+      <header class="header">
+          <img src="./assets/images/logo-awesome.png" alt="logo Awesome" class="header__logo">
+      </header> 
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
+      <main>
+          <h1 class="title_main">Crea tu tarjeta de visita</h1>
+      <p class="main_text">Crea mejores contactos profesionales de <br>forma fácil y cómoda</p>
+      <div class="container_list">
+      <article>
+          <p class="item_main"><i class="fa-solid fa-brush" style="color: #e17334;"></i></p>
+          <p class="item_main2">Diseña</p>
+          
+          
+      </article>
+      <article>
+           <p class="item_main"><i class="fa-solid fa-keyboard" style="color: #e17334;"></i></p>
+          <p class="item_main2">Rellena</p>
+         
+      </article>
+      <article>
+        <p class="item_main"><i class="fa-solid fa-share-nodes" style="color: #e17334;"></i></p>
+        <p class="item_main2">Comparte</p>  
+      </article>
+      </div>
+      <div class="button_2">
+      <button class="button_start"><a href="../cardCreator.html">COMENZAR</a></button>
+      </div>
       </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
+      <footer class="footer">
+          <p class="footer__name">Awesome profile-cards &copy2018</p>
+          <img src="./assets/images/logo-adalab.png" alt="logo adalab" class="footer__logo">
       </footer>
-
     </div>
     <script src="./assets/js/main.js"></script>
   </body>
