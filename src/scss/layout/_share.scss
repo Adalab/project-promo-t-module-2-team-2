@@ -1,5 +1,7 @@
 .share{
     border: 0;
+    display: flex;
+    justify-content: center;
     &__unfold {
       margin-top: 27px;
       display: flex;
@@ -45,6 +47,11 @@
   padding: 10px;
   border-radius: 12px;
   border-color: transparent;
+
+  &-i {
+color: $white-two;
+padding-right: 9px;
+  }
 }
 
 .url{
@@ -53,6 +60,8 @@
   align-items: center;
   flex-direction:column-reverse;
   font-size: 12px;
+  font-family: $primary-text;
+  font-weight: 600;
 }
 
 .tarjeta{
@@ -74,12 +83,15 @@
 .twitter{
   display: flex;
   align-items: center;
-  flex-direction: column-reverse;
+  justify-content: center;
   background-color: #00a0f5;
   margin:13px 50px 30px;
   border-radius: 5px;
   padding: 10px;
   border-color: transparent;
+  font-family: $primary-text;
+  width: 181px;
+  height: 30px;
 }
 
 .url1{
