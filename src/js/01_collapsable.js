@@ -19,6 +19,8 @@ function handleClickDesignUnfold(event) {
     fillForm.classList.add('collapsed');
     fillArrow.classList.remove('arrowUp');
     designArrow.classList.add('arrowUp');
+    shareForm.classList.add('collapsed');
+    shareArrow.classList.remove('arrowUp');
   } else {
     designForm.classList.add('collapsed');
     designArrow.classList.remove('arrowUp');
@@ -31,6 +33,8 @@ function handleClickFillUnfold(event) {
     designForm.classList.add('collapsed');
     designArrow.classList.remove('arrowUp');
     fillArrow.classList.add('arrowUp');
+    shareForm.classList.add('collapsed');
+    shareArrow.classList.remove('arrowUp');
   } else {
     fillForm.classList.add('collapsed');
     fillArrow.classList.remove('arrowUp');
