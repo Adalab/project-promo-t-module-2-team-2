@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
   }
 
   &__description {
@@ -29,7 +30,6 @@
   &__arrow {
     color: $gunmetal;
   }
-  cursor: pointer;
 }
 
 .color-selection {

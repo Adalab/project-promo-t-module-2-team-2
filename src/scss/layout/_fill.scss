@@ -6,12 +6,12 @@
     border: none;
     font-family: $primary-text;
     font-size: 14px;
-    cursor: pointer;
 
     &__unfold {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
     }
 
     &__description {
