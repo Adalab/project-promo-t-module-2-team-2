@@ -1,5 +1,6 @@
 .fill {
     border: 0;
+    font-family: $primary-text;
 
     &__unfold {
         display: flex;
@@ -40,7 +41,6 @@
     var(--white-four),
     var(--white-two) 9%);
 border: none;
-font-family: $primary-text;
 font-size: 14px;
 
     &__label {
