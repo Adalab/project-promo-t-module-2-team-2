@@ -17,13 +17,10 @@ function handleClickDesignUnfold(event) {
   if (designForm.classList.contains('collapsed')) {
     designForm.classList.remove('collapsed');
     fillForm.classList.add('collapsed');
+    shareForm.classList.add('collapsed');
     fillArrow.classList.remove('arrowUp');
     designArrow.classList.add('arrowUp');
-    shareForm.classList.add('collapsed');
     shareArrow.classList.remove('arrowUp');
-  } else {
-    designForm.classList.add('collapsed');
-    designArrow.classList.remove('arrowUp');
   }
 }
 function handleClickFillUnfold(event) {
@@ -31,26 +28,21 @@ function handleClickFillUnfold(event) {
   if (fillForm.classList.contains('collapsed')) {
     fillForm.classList.remove('collapsed');
     designForm.classList.add('collapsed');
+    shareForm.classList.add('collapsed');
     designArrow.classList.remove('arrowUp');
     fillArrow.classList.add('arrowUp');
-    shareForm.classList.add('collapsed');
     shareArrow.classList.remove('arrowUp');
-  } else {
-    fillForm.classList.add('collapsed');
-    fillArrow.classList.remove('arrowUp');
   }
 }
 function handleClickShareUnfold(event) {
   event.preventDefault();
   if (shareForm.classList.contains('collapsed')) {
     shareForm.classList.remove('collapsed');
-    shareArrow.classList.add('arrowUp');
     designForm.classList.add('collapsed');
-    designArrow.classList.remove('arrowUp');
     fillForm.classList.add('collapsed');
-  } else {
-    shareForm.classList.add('collapsed');
-    shareArrow.classList.remove('arrowUp');
+    fillArrow.classList.remove('arrowUp');
+    shareArrow.classList.add('arrowUp');
+    designArrow.classList.remove('arrowUp');
   }
 }
 
