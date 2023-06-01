@@ -9,6 +9,10 @@ const previewMail = document.querySelector('.js_mail');
 const previewLinkedin = document.querySelector('.js_linkedin');
 const previewGithub = document.querySelector('.js_github');
 const fill = document.querySelector('.js_fill');
+const nameInput = document.querySelector('.js-name');
+const jobInput = document.querySelector('.js-job');
+const nameDefault = previewName.textContent;
+const jobDefault = previewJob.textContent;
 
 
 const data = {
@@ -25,8 +29,8 @@ const data = {
 
 //funciones
 function renderPreview (){
-  previewName.innerHTML = data.name;
-  previewJob.innerHTML = data.job;
+  previewName.innerHTML = nameInput.value === '' ? nameDefault : data.name;
+  previewJob.innerHTML = jobInput.value === '' ? jobDefault : data.job;
   previewMail.href = `mailto:${data.email}`;
   previewLinkedin.href = `http://linkedin.com/company/${data.linkedin}`;
   previewGithub.href = `http://github.com/${data.github}`;
@@ -38,36 +42,5 @@ function handlerInputs (event) {
   data[idInput] = valueInput;
   renderPreview();
 }
-/*function handlerInputName (event){
-  const inputValue = event.target.value;
-  previewName.innerHTML = inputValue;
-}
 
-function handlerInputJob (event){
-  const inputValue = event.target.value;
-  previewJob.innerHTML = inputValue;
-}
-
-function handlerInputMail (event) {
-  const inputValue = event.target.value;
-  previewMail.href = inputValue; 
-}
-
-function handlerInputLinkedin (event) {
-  const inputValue = event.target.value;
-  previewLinkedin.href = inputValue; 
-}
-
-function handlerInputGithub (event) {
-  const inputValue = event.target.value;
-  previewGithub.href = inputValue; 
-}
-
-//eventos
-inputName.addEventListener('input', handlerInputName);
-inputJob.addEventListener('input', handlerInputJob);
-inputMail.addEventListener('input', handlerInputMail);
-inputLinkedin.addEventListener('input', handlerInputLinkedin);
-inputGithub.addEventListener('input', handlerInputGithub);
-*/
 fill.addEventListener('keyup',handlerInputs);
