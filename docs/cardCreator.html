@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome profile-cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/favicon.png">
+    <script src="https://kit.fontawesome.com/960132646f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/cardCreator.css" />
+  </head>
+
+  <body>
+    <header>
+      <header class="header">
+          <img src="./assets/images/logo-awesome.png" alt="logo Awesome" class="header__logo">
+      </header> 
+    </header>
+    <main class="cardcreator-main">
+      <section class="preview bluedesign">
+            <button class="preview__button">
+              <i class="fa-regular fa-trash-can"></i> RESET
+            </button>
+            <article class="preview__card js_preview-card palette1">
+              <div class="preview__card--title">
+                <h3 class="preview__card--name js-preview-name">Nombre Apellido</h3>
+                <p class="preview__card--job js-preview-job">Pawesome developer</p>
+              </div>
+              <img src="./assets/images/preview-card-img.jpg" alt="Card Preview" class="preview__card--img" />
+              <nav class="preview__card--nav">
+                <ul>
+                  <li><a href="js_mobile"><i class="fa-solid fa-mobile-screen-button pIcon"></a></i></li>
+                  <li><a class="js_mail" href=""><i class="fa-regular fa-envelope pIcon"></i></a></li>
+                  <li><a class="js_linkedin" href="" ><i class="fa-brands fa-linkedin-in pIcon"></i></a></li>
+                  <li><a class="js_github" href=""><i class="fa-brands fa-github-alt pIcon"></i></a></li>
+                </ul>
+              </nav>
+            </article> 
+        </section>
+      <section class="form">
+        <form action="">
+        <fieldset class="design-color">
+        <div class="design-color__unfold js_design-color__unfold">
+          <div class="design-color__description">
+            <i class="fa-solid fa-brush design-color__icon "></i>
+            <h2 class="design-color__title">diseña</h2>
+          </div>
+          <div>
+          <i class="fa-solid fa-chevron-down design-color__arrow arrowUp js_arrow_design"></i>
+          </div>
+        </div>
+         <div class="color-selection js_color-selection">
+            <h2 class="color-selection__title">colores</h2>
+            <div class="colors">
+                <div class="color-one">
+                  <label for="color-one"></label>
+                  <input class="color-one__radio js_radio1" type="radio" name ="colors" value="color-one" checked>
+                    <div class="color-one__colored"></div>
+                    <div class="color-one__colored"></div>
+                    <div class="color-one__colored"></div>
+                 </div>
+              <div class="color-two">
+                <label for="color-two"></label>
+                <input class="color-two__radio js_radio2"type="radio" name="colors" value="color-two">
+                  <div class="color-two__colored"></div>
+                  <div class="color-two__colored"></div>
+                  <div class="color-two__colored"></div>
+                </input>
+              </div>
+              <div class="color-three">
+                <label for="color-three"></label>
+                <input class="color-three__radio js_radio3" type="radio" name="colors" value="color-three" >
+                  <div class="color-three__colored"></div>
+                  <div class="color-three__colored"></div>
+                  <div class="color-three__colored"></div>
+                </input>
+              </div>      
+            </div>    
+          </div>
+        </fieldset>
+        <div class="separator"></div>  
+        <fieldset class="fill js_fill">
+                <div class="fill__unfold js_fill-color__unfold">
+                    <div class="fill__description">
+                        <i class="fa-solid fa-keyboard" style="color: #e17334;"></i>
+                        <h2 class="fill__title">rellena</h2>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-down fill__arrow js_arrow_fill"></i>
+                    </div>
+                </div>
+                <div class="fillform js_fillform collapsed">
+                    <form class="main-form" action="">
+                        <label class="main-form__label" for="name">
+                            <span class="main-form__span">Nombre completo</span>
+                            <input class="casillarespuesta js-name" type="text" id="name" name="name" placeholder="Ej: Sally Hill"
+                                required />
+                        </label>
+                        <label class="main-form__label" for="job">
+                            <span class="main-form__span">Puesto</span>
+                            <input class="casillarespuesta js-job" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn"
+                                required />
+                        </label>
+                        <label class="main-form__label" for="añadirimg">
+                            <span class="main-form__span">Imagen de perfil</span>
+                            <nav class="inlineimg">
+                                <div class="botom"><a class="añadir-imagen" href="https://adalab.es">Añadir imagen</a></div>
+                                <input class="casillarespuestapequeña" type="text" id="photo" name="photo" required />
+                            </nav>
+                        </label>
+                        <label class="main-form__label" for="email">
+                            <span class="main-form__span">Email</span>
+                            <input class="casillarespuesta js-mail" type="email" id="email" name="email"
+                                placeholder="Ej: sally-hill@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                        </label>
+                        <label class="main-form__label" for="phone" class="main__form--tlf">
+                            <span class="main-form__span">Teléfono</span>
+                            <input class="casillarespuesta" type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55" pattern="[0-9]{9}" required/>
+                        </label>
+                        <label class="main-form__label" for="linkedin">
+                            <span class="main-form__span">Linkedin</span>
+                            <input class="casillarespuesta js-linkedin" type="text" id="linkedin" name="linkedin"
+                                placeholder="Ej: linkedin.com/in/sally.hill" required />
+                        </label>
+                        <label class="main-form__label" for="github">
+                            <span class="main-form__span">Github</span>
+                            <input class="casillarespuesta js-github" type="text" id="github" name="github" placeholder="Ej: @sally-hill"
+                                required />
+                        </label>
+                    </form></div>
+                    </fieldset>
+            <div class="separator"></div>
+
+  
+        <fieldset class="share">
+          <div class="share__unfold js_share__unfold">
+            <div class="share__description">
+              <i class="fa-solid fa-share-nodes" style="color: #e17334"></i>
+              <h2 class="share__title">comparte</h2>
+            </div>
+            <div>
+              <i class="fa-solid fa-chevron-down share__arrow js_share__arrow"></i>
+            </div>
+          </div>
+        </fieldset>
+        <section class="section_share js_share collapsed">
+          <button class="botom-share">
+            <i class="botom-share-i fa-solid fa-address-card"></i>
+            <a class="Crear-tarjeta" href="">CREAR TARJETA</a>
+          </button>
+
+          <div class="separator2"></div>
+
+          <div class="share-success js_share-success ">
+            <div class="tarjeta">La tarjeta ha sido creada:</div>
+            <span class="url"> https://awesome-profile-card.com?id=A456DF0001 </span>
+            <button class="twitter">
+              <i class="fa-brands fa-twitter twitter-i"></i>
+              <a class="url-twitter" href="">Compartir en Twitter</a>
+            </button>
+          </div>
+        </section>
+        <div class="separator2"></div>
+  
+        </form>
+      </section>
+    </main>
+    <footer>
+      <footer class="footer">
+          <p class="footer__name">Awesome profile-cards &copy2018</p>
+          <img src="./assets/images/logo-adalab.png" alt="logo adalab" class="footer__logo">
+      </footer>
+    </footer>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
