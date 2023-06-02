@@ -53,8 +53,8 @@ function handlerInputs (event) {
 const btnReset = document.querySelector('.js_btnreset');
 
 function handleclickReset(event) {
-event.preventDefault();
-console.log(data);
+  event.preventDefault();
+  console.log(data);
 
   data.name ='';
   data.palette ='';
@@ -64,7 +64,14 @@ console.log(data);
   data.linkedin ='';
   data.github ='';
   data.photo ='';
-
+  mailInput.value = '';
+  phoneInput.value = '';
+  jobInput.value = '';
+  photoInput.value = '';
+  nameInput.value = '';
+  linkedinInput.value = '';
+  githubInput.value = '';
+  renderPreview();
 
 }
 
