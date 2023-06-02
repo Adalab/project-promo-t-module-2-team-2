@@ -11,6 +11,13 @@ const previewGithub = document.querySelector('.js_github');
 const fill = document.querySelector('.js_fill');
 const nameInput = document.querySelector('.js-name');
 const jobInput = document.querySelector('.js-job');
+const mailInput = document.querySelector('.js-mail');
+const phoneInput = document.querySelector('.js-phone');
+const linkedinInput = document.querySelector('.js-linkedin');
+const githubInput = document.querySelector('.js-github');
+const photoInput = document.querySelector('.js-photo');
+
+
 const nameDefault = previewName.textContent;
 const jobDefault = previewJob.textContent;
 
@@ -43,4 +50,26 @@ function handlerInputs (event) {
   renderPreview();
 }
 
+const btnReset = document.querySelector('.js_btnreset');
+
+function handleclickReset(event) {
+event.preventDefault();
+console.log(data);
+
+  data.name ='';
+  data.palette ='';
+  data.job ='';
+  data.phone ='';
+  data.email ='';
+  data.linkedin ='';
+  data.github ='';
+  data.photo ='';
+
+
+}
+
+
+btnReset.addEventListener('click', handleclickReset);
+
 fill.addEventListener('keyup',handlerInputs);
+
