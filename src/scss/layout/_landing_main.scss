@@ -1,3 +1,6 @@
+.page{
+  height: 100vh;
+}
 .title_main {
   font-size: 19.2px;
   font-family: $main-title;
@@ -39,7 +42,6 @@
   display: flex;
   justify-content: center;
   margin: auto;
-  
   align-items: center;
   width: 129px;
   height: 42px;
@@ -88,10 +90,6 @@ main {
 
   .item_main2 {
     font-size: 16px;
-  }
-
-  .button_2 {
-    margin-top: 186px;
   }
 
   main {
