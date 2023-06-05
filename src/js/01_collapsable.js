@@ -2,8 +2,8 @@
 // variables
 const collapsedHeader = document.querySelectorAll('.js-fieldset__header');
 const collapsedContainer = document.querySelectorAll('.js-fieldset__container');
-const fieldset = document.querySelectorAll ('.js-fieldset');
-const allArrow = document.querySelectorAll ('.js_arrow');
+const fieldset = document.querySelectorAll('.js-fieldset');
+const allArrow = document.querySelectorAll('.js_arrow');
 
 
 // funciones
