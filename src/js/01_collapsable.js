@@ -9,10 +9,13 @@ const designArrow =document.querySelector('.js_arrow_design');
 const shareUnfold = document.querySelector('.js_share__unfold');
 const shareArrow = document.querySelector('.js_share__arrow');
 const shareForm = document.querySelector('.js_share');
+const collapsedHeader = document.querySelectorAll('.js-fieldset__header');
+const collapsedContainer = document.querySelectorAll('.js-fieldset__container');
+const fieldset = document.querySelectorAll ('.js-fieldset');
 
 
 // funciones
-function handleClickDesignUnfold(event) {
+/*function handleClickDesignUnfold(event) {
   event.preventDefault();
   if (designForm.classList.contains('collapsed')) {
     designForm.classList.remove('collapsed');
@@ -44,10 +47,26 @@ function handleClickShareUnfold(event) {
     shareArrow.classList.add('arrowUp');
     designArrow.classList.remove('arrowUp');
   }
+}*/
+
+function handleClickForm(event) {
+const clickedHeader = event.currentTarget;
+const parentClicked = clickedHeader.parentNode;
+  for (let i = 0; i < fieldset.length; i++) {
+    if (fieldset[i] === parentClicked) {
+      collapsedContainer[i].classList.remove('collapsed');
+    } else {
+      collapsedContainer[i].classList.add('collapsed');
+    }
+  }
 }
 
 
+
 //eventos
-designUnfold.addEventListener('click', handleClickDesignUnfold);
+/*designUnfold.addEventListener('click', handleClickDesignUnfold);
 fillUnfold.addEventListener('click', handleClickFillUnfold);
-shareUnfold.addEventListener('click', handleClickShareUnfold);
+shareUnfold.addEventListener('click', handleClickShareUnfold);*/
+for (const header of collapsedHeader){
+  header.addEventListener('click', handleClickForm);
+}
