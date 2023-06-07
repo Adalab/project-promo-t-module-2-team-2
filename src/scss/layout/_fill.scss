@@ -1,115 +1,121 @@
 .fill {
-    border: 0;
+  border: 0;
+  font-family: $primary-text;
+
+  &__unfold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    color: $dull-orange;
+  }
+
+  &__title {
+    padding-left: 10px;
+    font-size: 18px;
+    color: $gunmetal;
     font-family: $primary-text;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 
-    &__unfold {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    &__description {
-        display: flex;
-        align-items: center;
-    }
-
-    &__icon {
-        color: $dull-orange;
-    }
-
-    &__title {
-        padding-left: 10px;
-        font-size: 18px;
-        color: $gunmetal;
-        font-family: $primary-text;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-
-    &__arrow {
-        color: $gunmetal;
-    }
+  &__arrow {
+    color: $gunmetal;
+  }
 }
 
 .fillform {
+  color: $dark-green-blue;
+  font-family: $primary-text;
+  border: none;
+  font-size: 14px;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
     color: $dark-green-blue;
     font-family: $primary-text;
     border: none;
     font-size: 14px;
-}
-
-.main-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__label {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        margin-top: 30px;
-        color: $dark-green-blue;
-        font-family: $primary-text;
-        border: none;
-        font-size: 14px;    
-    }
+  }
 }
 
 .casillarespuesta {
-    height: 30px;
-    border: solid 1px $hospital-green; 
+  height: 30px;
+  border: solid 1px $hospital-green;
 }
 
 .casillarespuestapequeña {
-    width: 25px;
-    height: 25px;
-    border: solid 1px $hospital-green;
+  width: 25px;
+  height: 25px;
+  border: solid 1px $hospital-green;
 }
 
 input::placeholder {
-    color: $pinkish-grey;
-    font-family: $primary-text;
+  color: $pinkish-grey;
+  font-family: $primary-text;
 }
 
 .inlineimg {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
-.action__hiddenField{
-    display: none;
+.action__hiddenField {
+  display: none;
 }
 
 .add-image {
-    text-decoration: none;
-    color: $white-two;
+  text-decoration: none;
+  color: $white-two;
+}
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
 }
 
 .botom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $dull-orange;
-    border-radius: 3px;
-    width: 130px;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dull-orange;
+  border-radius: 3px;
+  width: 130px;
+  color: $white-two;
 }
 
 .separator {
-    border: 1px solid $white-three;
-    width: 87.5vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  border: 1px solid $white-three;
+  width: 87.5vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-    @media screen and (min-width: 768px) {
-        width: 329px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 329px;
+  }
 }
 
 .collapsed {
-    display: none;
+  display: none;
 }
 .arrowUp {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
