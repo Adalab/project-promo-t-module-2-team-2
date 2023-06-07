@@ -77,8 +77,11 @@ input::placeholder {
     flex-direction: row;
     gap: 30px;
 }
+.action__hiddenField{
+    display: none;
+}
 
-.añadir-imagen {
+.add-image {
     text-decoration: none;
     color: $white-two;
 }
@@ -90,6 +93,7 @@ input::placeholder {
     background-color: $dull-orange;
     border-radius: 3px;
     width: 130px;
+    
 }
 
 .separator {

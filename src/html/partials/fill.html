@@ -23,8 +23,9 @@
                 <label class="main-form__label" for="añadirimg">
                     <span class="main-form__span">Imagen de perfil</span>
                     <nav class="inlineimg">
-                        <div class="botom"><a class="añadir-imagen" href="https://adalab.es">Añadir imagen</a></div>
-                        <input class="casillarespuestapequeña js-photo" type="text" id="photo" name="photo" required />
+                        <label class="action__upload-btn botom" for="img-selector"></label>
+                        <input type="file" id="img-selector" class="add-image action__hiddenField js__profile-upload-btn"></input>
+                        <input class="casillarespuestapequeña js-photo js__profile-image" type="text" id="photo" name="photo" required />
                     </nav>
                 </label>
                 <label class="main-form__label" for="email">
