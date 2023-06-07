@@ -65,17 +65,17 @@ function remove() {
 function clickRadio1() {
   remove();
   previewCard.classList.add('palette1');
-  data.palette = 'palette1';
+  data.palette = '1';
 }
 function clickRadio2() {
   remove();
   previewCard.classList.add('palette2');
-  data.palette = 'palette2';
+  data.palette = '2';
 }
 function clickRadio3() {
   remove();
   previewCard.classList.add('palette3');
-  data.palette = 'palette3';
+  data.palette = '3';
 }
 
 //03_fill.js ------------------------------------------
@@ -109,19 +109,18 @@ function handleclickReset(event) {
   data.email = '';
   data.linkedin = '';
   data.github = '';
-  profileImage.style.backgroundImage = 'url(/assets/images/preview-card-img.jpg)';
-  profilePreview.style.backgroundImage = '';
   mailInput.value = '';
   phoneInput.value = '';
   jobInput.value = '';
   nameInput.value = '';
   linkedinInput.value = '';
   githubInput.value = '';
+  profileImage.style.backgroundImage = 'url(/assets/images/preview-card-img.jpg)';
+  profilePreview.style.backgroundImage = '';
   renderPreview();
   remove();
   previewCard.classList.add('palette1');
   radio1.checked = true;
-
 }
 
 //05_share.js------------------------------------------
@@ -139,20 +138,24 @@ function handleClickCreate(event) {
   if (allFieldComplete === true) {
     fetch('https://dev.adalab.es/api/card/', {
       method: 'POST',
+      body: JSON.stringify(data),
       headers: {
         'content-type': 'application/json',
       },
-      body: JSON.stringify(data),
     })
       .then((response) => response.json())
-      .then((data) => {
-        if(data.success) {
-          linkUrl.innerHTML = data.cardUrl;
-          linkUrl.href = data.cardUrl;
+      .then((datos) => {
+        debugger;
+        console.log(datos)
+        if (datos.success) {
+          linkUrl.innerHTML = datos.cardURL;
+          linkUrl.href = datos.cardURL;
         } else {
-          msjError.innerHTML = 'Las tres lunas de marte no están alineadas, intentelo de nuevo';
+          msjError.innerHTML =
+            'Las tres lunas de marte no están alineadas, intentelo de nuevo';
         }
-      });
+      })
+      .catch((err) => console.log('error', err));
   }
 }
 
@@ -185,7 +188,7 @@ function getImage(e){
 function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  data.photo = `url(${fr.result})`;
+  data.photo = fr.result;
 }
 
 fileField.addEventListener('change', getImage);
