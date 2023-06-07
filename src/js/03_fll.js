@@ -1,8 +1,12 @@
 'use strict';
-
-
+//import { clicked } from "./js/02_design.js";
 
 //variables
+const radio1 = document.querySelector('.js_radio1');
+const radio2 = document.querySelector('.js_radio2');
+const radio3 = document.querySelector('.js_radio3');
+const previewCard = document.querySelector('.js_preview-card');
+
 const previewName = document.querySelector('.js-preview-name');
 const previewJob = document.querySelector('.js-preview-job');
 const previewMail = document.querySelector('.js_mail');
@@ -15,15 +19,24 @@ const mailInput = document.querySelector('.js-mail');
 const phoneInput = document.querySelector('.js-phone');
 const linkedinInput = document.querySelector('.js-linkedin');
 const githubInput = document.querySelector('.js-github');
-const photoInput = document.querySelector('.js-photo');
-
+// const photoInput = document.querySelector('.js-photo');
 
 const nameDefault = previewName.textContent;
 const jobDefault = previewJob.textContent;
 
+const btnReset = document.querySelector('.js_btnreset');
+
+const createBtn = document.querySelector('.botom-share');
+const linkUrl = document.querySelector('.url');
+const msjError = document.querySelector('.error');
+
+const fr = new FileReader();
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
 
 const data = {
-  palette: '',
+  palette: '' ,
   name: previewName.textContent,
   job: previewJob.textContent,
   phone: '',
@@ -33,50 +46,140 @@ const data = {
   photo: '',
 };
 
-
 //funciones
-function renderPreview (){
+//02_design.js------------------------------------------------
+//borrar clases paleta de colores html.
+function remove() {
+  if (previewCard.classList.contains('palette1')) {
+    previewCard.classList.remove('palette1');
+
+  } else if (previewCard.classList.contains('palette2')) {
+    previewCard.classList.remove('palette2');
+  } else if (previewCard.classList.contains('palette3')) {
+    previewCard.classList.remove('palette3');
+  }
+}
+// añadir al preview palette seleccionada y guardado en data 
+function clickRadio1() {
+  remove();
+  previewCard.classList.add('palette1');
+  data.palette = 'palette1';
+}
+function clickRadio2() {
+  remove();
+  previewCard.classList.add('palette2');
+  data.palette = 'palette2';
+}
+function clickRadio3() {
+  remove();
+  previewCard.classList.add('palette3');
+  data.palette = 'palette3';
+}
+
+//03_fill.js ------------------------------------------
+//mostrar valores de input a preview
+function renderPreview() {
+
   previewName.innerHTML = nameInput.value === '' ? nameDefault : data.name;
   previewJob.innerHTML = jobInput.value === '' ? jobDefault : data.job;
   previewMail.href = `mailto:${data.email}`;
   previewLinkedin.href = `http://linkedin.com/company/${data.linkedin}`;
   previewGithub.href = `http://github.com/${data.github}`;
-
 }
-function handlerInputs (event) {
+
+//recoger valores de input para renderizarlos
+function handlerInputs(event) {
   const idInput = event.target.id;
   const valueInput = event.target.value;
   data[idInput] = valueInput;
   renderPreview();
 }
 
-const btnReset = document.querySelector('.js_btnreset');
+//botón reset de preview
 
 function handleclickReset(event) {
+  debugger;
   event.preventDefault();
-  console.log(data);
-
-  data.name ='';
-  data.palette ='';
-  data.job ='';
-  data.phone ='';
-  data.email ='';
-  data.linkedin ='';
-  data.github ='';
-  data.photo ='';
+  data.name = '';
+  data.palette = '';
+  data.job = '';
+  data.phone = '';
+  data.email = '';
+  data.linkedin = '';
+  data.github = '';
+  profilePreview.style.backgroundImage = 'url(../images/preview-card-img.jpg)';
   mailInput.value = '';
   phoneInput.value = '';
   jobInput.value = '';
-  photoInput.value = '';
   nameInput.value = '';
   linkedinInput.value = '';
   githubInput.value = '';
   renderPreview();
+}
 
+//05_share.js------------------------------------------
+//botón crear targeta
+function handleClickCreate(event) {
+ 
+  event.preventDefault();
+  let allFieldComplete = true;
+  for (let i = 0; i < data.length; i++) {
+    if (data[i] === '') {
+      msjError.innerHTML += `Rellena el campo ${data[i]}`;
+      allFieldComplete = false;
+    }
+  }
+  if (allFieldComplete === true) {
+    fetch('https://dev.adalab.es/api/card/', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if(data.success) {
+          linkUrl.innerHTML = data.cardUrl;
+          linkUrl.href = data.cardUrl;
+        } else {
+          msjError.innerHTML = 'Las tres lunas de marte no están alineadas, intentelo de nuevo';
+        }
+      });
+  }
 }
 
 
+radio1.addEventListener('click', clickRadio1);
+radio2.addEventListener('click', clickRadio2);
+radio3.addEventListener('click', clickRadio3);
+fill.addEventListener('keyup', handlerInputs);
 btnReset.addEventListener('click', handleclickReset);
+createBtn.addEventListener('click', handleClickCreate);
 
-fill.addEventListener('keyup',handlerInputs);
+
+//04_image.js - botón añadir imagen y guardarla en data.
+
+/**
+ * Recoge el archivo añadido al campo de tipo "file"
+ * y lo carga en nuestro objeto FileReader para que 
+ * lo convierta a algo con lo que podamos trabajar.
+ * Añade un listener al FR para que ejecute una función
+ * al tener los datos listos
+ * @param {evento} e 
+ */
+function getImage(e){
+  const myFile = e.currentTarget.files[0];
+  fr.addEventListener('load', writeImage);
+  fr.readAsDataURL(myFile);
+}
+
+
+function writeImage() {
+  profileImage.style.backgroundImage = `url(${fr.result})`;
+  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  data.photo = `url(${fr.result})`;
+}
+
+fileField.addEventListener('change', getImage);
 
