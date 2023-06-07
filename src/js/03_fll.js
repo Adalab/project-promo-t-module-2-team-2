@@ -52,11 +52,13 @@ const data = {
 function remove() {
   if (previewCard.classList.contains('palette1')) {
     previewCard.classList.remove('palette1');
-
+    radio1.checked = false;
   } else if (previewCard.classList.contains('palette2')) {
     previewCard.classList.remove('palette2');
+    radio2.checked = false;
   } else if (previewCard.classList.contains('palette3')) {
     previewCard.classList.remove('palette3');
+    radio3.checked = false;
   }
 }
 // añadir al preview palette seleccionada y guardado en data 
@@ -107,7 +109,8 @@ function handleclickReset(event) {
   data.email = '';
   data.linkedin = '';
   data.github = '';
-  profilePreview.style.backgroundImage = 'url(../images/preview-card-img.jpg)';
+  profileImage.style.backgroundImage = 'url(/assets/images/preview-card-img.jpg)';
+  profilePreview.style.backgroundImage = '';
   mailInput.value = '';
   phoneInput.value = '';
   jobInput.value = '';
@@ -115,6 +118,10 @@ function handleclickReset(event) {
   linkedinInput.value = '';
   githubInput.value = '';
   renderPreview();
+  remove();
+  previewCard.classList.add('palette1');
+  radio1.checked = true;
+
 }
 
 //05_share.js------------------------------------------
