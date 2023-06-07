@@ -42,6 +42,10 @@
     }
     &--img {
       background-image: url(../images/preview-card-img.jpg);
+      width: 240px;
+      height: 200px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     &--job {
