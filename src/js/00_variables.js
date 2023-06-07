@@ -1,0 +1,33 @@
+//variables
+const radio1 = document.querySelector('.js_radio1');
+const radio2 = document.querySelector('.js_radio2');
+const radio3 = document.querySelector('.js_radio3');
+const previewCard = document.querySelector('.js_preview-card');
+
+const previewName = document.querySelector('.js-preview-name');
+const previewJob = document.querySelector('.js-preview-job');
+const previewMail = document.querySelector('.js_mail');
+const previewLinkedin = document.querySelector('.js_linkedin');
+const previewGithub = document.querySelector('.js_github');
+const fill = document.querySelector('.js_fill');
+const nameInput = document.querySelector('.js-name');
+const jobInput = document.querySelector('.js-job');
+const mailInput = document.querySelector('.js-mail');
+const phoneInput = document.querySelector('.js-phone');
+const linkedinInput = document.querySelector('.js-linkedin');
+const githubInput = document.querySelector('.js-github');
+// const photoInput = document.querySelector('.js-photo');
+
+const nameDefault = previewName.textContent;
+const jobDefault = previewJob.textContent;
+
+const btnReset = document.querySelector('.js_btnreset');
+
+const createBtn = document.querySelector('.botom-share');
+const linkUrl = document.querySelector('.url');
+const msjError = document.querySelector('.error');
+
+const fr = new FileReader();
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
