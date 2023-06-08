@@ -1,6 +1,6 @@
 'use strict';
-const data = {
-  palette: '',
+let data = {
+  palette: 1,
   name: previewName.textContent,
   job: previewJob.textContent,
   phone: '',
