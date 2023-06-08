@@ -8,19 +8,30 @@
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .cardcreator-main {
     display: grid;
     grid-template-columns: 399px 1fr;
     justify-content: left;
     background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
+    height: 100%;
+    padding-bottom: 40px;
   }
 
   .preview {
     order: 2;
+    height: 100%;
     margin-top: 20px;
     margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 6px;
+    height: 100%;
   }
 
   .form {
