@@ -23,6 +23,7 @@ function handleClickCreate(event) {
           linkUrl.href = data.cardURL;
           success.classList.remove('collapsed');
           twitter.classList.remove('collapsed');
+          msjError.innerHTML = "";
         } else {
           msjError.innerHTML =
             'Las tres lunas de marte no están alineadas, inténtalo de nuevo';
