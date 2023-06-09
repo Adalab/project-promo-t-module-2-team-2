@@ -1,6 +1,6 @@
 'use strict';
 let data = {
-  palette: 1,
+  palette: '1',
   name: previewName.textContent,
   job: previewJob.textContent,
   phone: '',
@@ -43,7 +43,7 @@ function handleclickReset(event) {
   linkedinInput.value = '';
   githubInput.value = '';
   profileImage.style.backgroundImage =
-    'url(/assets/images/preview-card-img.jpg)';
+    'url(../assets/images/preview-card-img.jpg)';
   profilePreview.style.backgroundImage = '';
   renderPreview();
   remove();
