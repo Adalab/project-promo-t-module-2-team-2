@@ -118,6 +118,52 @@
   }
 }
 
+.color-four {
+  margin-bottom: 20px;
+  display: flex;
+
+  &__colored {
+    width: 30px;
+    height: 25px;
+
+    &:nth-child(3) {
+      margin-left: 10px;
+      background-color: purple;
+    }
+
+    &:nth-child(4) {
+      background-color: rgb(195, 0, 195);
+    }
+
+    &:nth-child(5) {
+      background-color: rgb(245, 2, 245);
+    }
+  }
+}
+
+.color-five {
+  margin-bottom: 20px;
+  display: flex;
+
+  &__colored {
+    width: 30px;
+    height: 25px;
+
+    &:nth-child(3) {
+      margin-left: 10px;
+      background-color: rgb(0, 128, 21);
+    }
+
+    &:nth-child(4) {
+      background-color: rgb(128, 201, 50);
+    }
+
+    &:nth-child(5) {
+      background-color: rgb(188, 254, 82);
+    }
+  }
+}
+
 .separator {
   border: 1px solid $white-three;
   width: 87.5vw;
