@@ -1,8 +1,6 @@
 'use strict';
 const cardLS = JSON.parse(localStorage.getItem('cardData'));
 
-
-
 let data = {
   palette: '1',
   name: previewName.textContent,
@@ -13,6 +11,7 @@ let data = {
   github: '',
   photo: '',
 };
+
 
 function init() {
   if (cardLS) {
@@ -29,8 +28,16 @@ function renderPreview() {
   previewJob.innerHTML = data.job === '' ? jobDefault : data.job;
   previewMail.href = `mailto:${data.email}`;
   previewLinkedin.href = `http://linkedin.com/company/${data.linkedin}`;
-  previewGithub.href = `http://github.com/${data.github}`;
+  previewGithub.href =`http://github.com/${data.github}`;
+     if (data.photo === '') {
+       profileImage.style.backgroundImage =
+         'url(./assets/images/preview-card-img.jpg)';
+     } else {
+       profileImage.style.backgroundImage = `url(${data.photo})`;
+     }
+  if(data.palette === 1 ){
 
+  }
 }
 
 //recoger valores de input para renderizarlos
@@ -63,6 +70,7 @@ function handleclickReset(event) {
   remove();
   previewCard.classList.add('palette1');
   radio1.checked = true;
+  localStorage.setItem('cardData','');
 }
 
 
