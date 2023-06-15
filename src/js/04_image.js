@@ -17,11 +17,7 @@ function getImage(e) {
 }
 
 function writeImage() {
-  if(data.photo === ''){
-    profileImage.style.backgroundImage = 'url(./assets/images/preview-card-img.jpg)';
-  } else{
-    profileImage.style.backgroundImage = data.photo;
-  }
+
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   data.photo = fr.result;
