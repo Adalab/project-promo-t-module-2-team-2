@@ -1,4 +1,8 @@
 'use strict';
+const cardLS = JSON.parse(localStorage.getItem('cardData'));
+
+
+
 let data = {
   palette: '1',
   name: previewName.textContent,
@@ -10,13 +14,23 @@ let data = {
   photo: '',
 };
 
+function init() {
+  if (cardLS) {
+    data = cardLS;
+    renderPreview(data);
+  }
+}
+
+init();
+
 //mostrar valores de input a preview
 function renderPreview() {
-  previewName.innerHTML = nameInput.value === '' ? nameDefault : data.name;
-  previewJob.innerHTML = jobInput.value === '' ? jobDefault : data.job;
+  previewName.innerHTML = data.name === '' ? nameDefault : data.name;
+  previewJob.innerHTML = data.job === '' ? jobDefault : data.job;
   previewMail.href = `mailto:${data.email}`;
   previewLinkedin.href = `http://linkedin.com/company/${data.linkedin}`;
   previewGithub.href = `http://github.com/${data.github}`;
+
 }
 
 //recoger valores de input para renderizarlos
@@ -25,6 +39,7 @@ function handlerInputs(event) {
   const valueInput = event.target.value;
   data[idInput] = valueInput;
   renderPreview();
+  localStorage.setItem('cardData', JSON.stringify(data));
 }
 
 //botón reset de preview
