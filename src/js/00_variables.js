@@ -1,4 +1,4 @@
-//variables
+'use strict';
 const radio1 = document.querySelector('.js_radio1');
 const radio2 = document.querySelector('.js_radio2');
 const radio3 = document.querySelector('.js_radio3');
@@ -31,3 +31,11 @@ const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
+const inputsValues = [
+  nameInput,
+  jobInput,
+  mailInput,
+  phoneInput,
+  linkedinInput,
+  githubInput,
+];

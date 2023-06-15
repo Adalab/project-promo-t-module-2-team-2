@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 // botón añadir imagen y guardarla en data.
 

@@ -3,13 +3,13 @@
 function remove() {
   if (previewCard.classList.contains('palette1')) {
     previewCard.classList.remove('palette1');
-    radio1.checked = false;
+    radio1.checked = true;
   } else if (previewCard.classList.contains('palette2')) {
     previewCard.classList.remove('palette2');
-    radio2.checked = false;
+    
   } else if (previewCard.classList.contains('palette3')) {
     previewCard.classList.remove('palette3');
-    radio3.checked = false;
+    
   }
 }
 // añadir al preview palette seleccionada y guardado en data
