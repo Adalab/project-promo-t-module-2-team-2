@@ -46,7 +46,6 @@ function handlerInputs(event) {
 /*for/in - recorre las propiedades de un objeto. 
 for/of - recorre los valores de un objeto iterable*/
 function handleclickReset(event) {
-  debugger;
   event.preventDefault();
   for (let property in data) {
     data[property] = '';

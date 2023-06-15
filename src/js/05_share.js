@@ -28,6 +28,9 @@ function handleClickCreate(event) {
           linkUrl.innerHTML = `<a href="${datos.cardURL}">${datos.cardURL}</a>`;
           success.classList.remove('collapsed');
           twitter.classList.remove('collapsed');
+          twitterLink.href =
+            'https://twitter.com/intent/tweet?text=Os%20comparto%20mi%20tarjeta%20de%20contacto:&url=' +
+            datos.cardURL;
           msjError.innerHTML = '';
         } else {
           msjError.innerHTML =
@@ -38,3 +41,4 @@ function handleClickCreate(event) {
 }
 
 createBtn.addEventListener('click', handleClickCreate);
+twitterBtn.addEventListener('click');
