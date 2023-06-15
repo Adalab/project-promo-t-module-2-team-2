@@ -5,17 +5,15 @@
   align-items: center;
 
   &__logo {
-    height: 63px;
     width: 250px;
-    margin-top: 95px;
-    margin-bottom: 35.4px;
+    margin-top: 25px;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header__logo {
     width: 419px;
-    height: 105px;
   }
 }
 
