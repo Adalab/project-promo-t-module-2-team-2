@@ -31,7 +31,6 @@ function handlerInputs(event) {
 /*for/in - recorre las propiedades de un objeto. 
 for/of - recorre los valores de un objeto iterable*/
 function handleclickReset(event) {
-  debugger;
   event.preventDefault();
   for (let property in data) {
     data[property] = '';
@@ -43,7 +42,7 @@ function handleclickReset(event) {
   linkedinInput.value = '';
   githubInput.value = '';
   profileImage.style.backgroundImage =
-    url('./assets/images/preview-card-img.jpg');
+    'url(../assets/images/preview-card-img.jpg)';
   profilePreview.style.backgroundImage = '';
   renderPreview();
   remove();
