@@ -26,6 +26,10 @@ const btnReset = document.querySelector('.js_btnreset');
 const createBtn = document.querySelector('.botom-share');
 const linkUrl = document.querySelector('.url');
 const msjError = document.querySelector('.error');
+const success = document.querySelector('.js_share-success');
+const twitter = document.querySelector('.twitter');
+
+
 
 const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');

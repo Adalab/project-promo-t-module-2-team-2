@@ -57,14 +57,19 @@ padding-right: 9px;
   }
 }
 
-.url{
-  color: $dull-orange;
-  display: flex;
-  align-items: center;
-  flex-direction:column-reverse;
+.error {
+    color: $dull-orange;
   font-size: 12px;
   font-family: $primary-text;
-  font-weight: 600;
+  margin: auto;
+}
+
+.url{
+  color: $dull-orange;
+  font-size: 12px;
+  font-family: $primary-text;
+  display: flex;
+  justify-content: center;
 }
 
 .Card{
