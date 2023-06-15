@@ -41,4 +41,3 @@ function handleClickCreate(event) {
 }
 
 createBtn.addEventListener('click', handleClickCreate);
-twitterBtn.addEventListener('click');
