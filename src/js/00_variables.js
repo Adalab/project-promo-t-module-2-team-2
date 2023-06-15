@@ -43,3 +43,4 @@ const inputsValues = [
   linkedinInput,
   githubInput,
 ];
+const twitterLink = document.querySelector('.url-twitter');

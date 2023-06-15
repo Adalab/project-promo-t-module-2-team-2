@@ -43,7 +43,7 @@ function handleclickReset(event) {
   linkedinInput.value = '';
   githubInput.value = '';
   profileImage.style.backgroundImage =
-    'url(../assets/images/preview-card-img.jpg)';
+    url('./assets/images/preview-card-img.jpg');
   profilePreview.style.backgroundImage = '';
   renderPreview();
   remove();

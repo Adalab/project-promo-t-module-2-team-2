@@ -28,6 +28,7 @@ function handleClickCreate(event) {
           linkUrl.innerHTML = `<a href="${datos.cardURL}">${datos.cardURL}</a>`;
           success.classList.remove('collapsed');
           twitter.classList.remove('collapsed');
+          twitterLink.href =''
           msjError.innerHTML = '';
         } else {
           msjError.innerHTML =
@@ -38,3 +39,4 @@ function handleClickCreate(event) {
 }
 
 createBtn.addEventListener('click', handleClickCreate);
+twitterBtn.addEventListener('click');
