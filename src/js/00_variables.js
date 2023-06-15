@@ -2,6 +2,9 @@
 const radio1 = document.querySelector('.js_radio1');
 const radio2 = document.querySelector('.js_radio2');
 const radio3 = document.querySelector('.js_radio3');
+const radio4 = document.querySelector('.js_radio4');
+const radio5 = document.querySelector('.js_radio5');
+const radio6 = document.querySelector('.js_radio6');
 const previewCard = document.querySelector('.js_preview-card');
 
 const previewName = document.querySelector('.js-preview-name');

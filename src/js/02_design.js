@@ -11,6 +11,14 @@ function remove() {
   } else if (previewCard.classList.contains('palette3')) {
     previewCard.classList.remove('palette3');
     
+  } else if (previewCard.classList.contains('palette4')) {
+    previewCard.classList.remove('palette4');
+
+  } else if (previewCard.classList.contains('palette5')) {
+    previewCard.classList.remove('palette5');
+  
+  } else if (previewCard.classList.contains('palette6')) {
+    previewCard.classList.remove('palette6');
   }
 }
 // añadir al preview palette seleccionada y guardado en data
@@ -29,7 +37,25 @@ function clickRadio3() {
   previewCard.classList.add('palette3');
   data.palette = '3';
 }
+function clickRadio4() {
+  remove();
+  previewCard.classList.add('palette4');
+  data.palette = '4';
+}
+function clickRadio5() {
+  remove();
+  previewCard.classList.add('palette5');
+  data.palette = '5';
+}
+function clickRadio6() {
+  remove();
+  previewCard.classList.add('palette6');
+  data.palette = '6';
+}
 
 radio1.addEventListener('click', clickRadio1);
 radio2.addEventListener('click', clickRadio2);
 radio3.addEventListener('click', clickRadio3);
+radio4.addEventListener('click', clickRadio4);
+radio5.addEventListener('click', clickRadio5);
+radio6.addEventListener('click', clickRadio6);

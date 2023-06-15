@@ -138,3 +138,72 @@
     }
   }
 }
+
+.purpledesign {
+  .preview {
+    &__card {
+      &--title {
+        border-left: 5px solid purple;
+      }
+      &--name {
+        color: rgb(195, 0, 195);
+      }
+      &--nav {
+        ul {
+          color: rgb(195, 0, 195);
+        }
+        li {
+          border: 2px solid rgb(245, 2, 245);
+        }
+      }
+    }
+  }
+}
+
+.greendesign {
+  .preview {
+    &__card {
+      &--title {
+        border-left: 5px solid rgb(0, 128, 21);
+      }
+
+      &--name {
+        color: rgb(128, 201, 50);
+      }
+
+      &--nav {
+        ul {
+          color: rgb(128, 201, 50);
+        }
+
+        li {
+          border: 2px solid rgb(188, 254, 82);
+        }
+      }
+    }
+  }
+}
+
+.orangedesign {
+  .preview {
+    &__card {
+      &--title {
+        border-left: 5px solid rgb(249, 148, 6);
+      }
+
+      &--name {
+        color: rgb(249, 208, 125);
+      }
+
+      &--nav {
+        ul {
+          color: rgb(249, 208, 125);
+        }
+
+        li {
+          border: 2px solid rgb(240, 124, 16);
+        }
+      }
+    }
+  }
+}
