@@ -1,7 +1,7 @@
 'use strict';
 //botón crear targeta
 function handleClickCreate(event) {
-    msjError.innerHTML='';
+  msjError.innerHTML = '';
   event.preventDefault();
   let allFieldComplete = true;
 
@@ -11,21 +11,21 @@ function handleClickCreate(event) {
   }
   for (let input in inputsValues) {
     if (inputsValues[input].value === '') {
-      msjError.innerHTML += `Rellena el campo ${inputsValues[input].name} </br>`;
+      msjError.innerHTML += `Rellena el campo ${inputsValues[input].name} <br>`;
       allFieldComplete = false;
     }
   }
-  
+
   if (allFieldComplete === true) {
     fetch('https://dev.adalab.es/api/card/', {
       method: 'POST',
       body: JSON.stringify(data),
-      headers: {'content-type': 'application/json',},
+      headers: { 'content-type': 'application/json' },
     })
       .then((response) => response.json())
       .then((datos) => {
         if (datos.success) {
-          linkUrl.innerHTML = `<a href="${datos.cardURL}">${datos.cardURL}</a>`;
+          linkUrl.innerHTML = `<a target="_blank" href="${datos.cardURL}">${datos.cardURL}</a>`;
           success.classList.remove('collapsed');
           twitter.classList.remove('collapsed');
           twitterLink.href =
@@ -33,8 +33,7 @@ function handleClickCreate(event) {
             datos.cardURL;
           msjError.innerHTML = '';
         } else {
-          msjError.innerHTML =
-            'Las tres lunas de marte no están alineadas, inténtalo de nuevo';
+          msjError.innerHTML = `Las tres lunas de marte no están alineadas, inténtalo de nuevo...<br><img class="img-error-one" src="./assets/images/error-one.gif">`;
         }
       });
   }
