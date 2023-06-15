@@ -35,42 +35,42 @@ function renderPreview() {
      } else {
        profileImage.style.backgroundImage = `url(${data.photo})`;
      }
-  if (data.palette === 1) {
+  if (data.palette === '1') {
     previewCard.classList.add('palette1');
     previewCard.classList.remove('palette2');
     previewCard.classList.remove('palette3');
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette5');
     previewCard.classList.remove('palette6');
-  } else if (data.palette === 2) {
+  } else if (data.palette === '2') {
     previewCard.classList.add('palette2');
     previewCard.classList.remove('palette1');
     previewCard.classList.remove('palette3');
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette5');
     previewCard.classList.remove('palette6');
-  } else if (data.palette === 3) {
+  } else if (data.palette === '3') {
     previewCard.classList.add('palette3');
     previewCard.classList.remove('palette2');
     previewCard.classList.remove('palette1');
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette5');
     previewCard.classList.remove('palette6');
-  } else if (data.palette === 4) {
+  } else if (data.palette === '4') {
     previewCard.classList.add('palette4');
     previewCard.classList.remove('palette1');
     previewCard.classList.remove('palette3');
     previewCard.classList.remove('palette2');
     previewCard.classList.remove('palette5');
     previewCard.classList.remove('palette6');
-  } else if (data.palette === 5) {
+  } else if (data.palette === '5') {
     previewCard.classList.add('palette5');
     previewCard.classList.remove('palette1');
     previewCard.classList.remove('palette3');
     previewCard.classList.remove('palette2');
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette6');
-  } else if (data.palette === 6) {
+  } else if (data.palette === '6') {
     previewCard.classList.add('palette6');
     previewCard.classList.remove('palette1');
     previewCard.classList.remove('palette3');
