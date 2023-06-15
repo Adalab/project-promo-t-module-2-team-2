@@ -1,5 +1,6 @@
 'use strict';
 //borrar clases paleta de colores html y radio checked
+
 function remove() {
   if (previewCard.classList.contains('palette1')) {
     previewCard.classList.remove('palette1');
