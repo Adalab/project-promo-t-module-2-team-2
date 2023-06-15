@@ -254,55 +254,55 @@
 
 .palette4 {
   .preview__card--title {
-    border-color: purple;
+    border-color: $purple-one;
   }
 
   .preview__card--name {
-    color: rgb(195, 0, 195);
+    color: $purple-three;
   }
 
   .preview__card--nav li {
-    border-color: rgb(245, 2, 245);
+    border-color: $purple-two;
   }
 
   .preview__card--nav .pIcon {
-    color: rgb(195, 0, 195);
+    color: $purple-three;
   }
 }
 
 .palette5 {
   .preview__card--title {
-    border-color: rgb(0, 128, 21);
+    border-color: $green-one;
   }
 
   .preview__card--name {
-    color: rgb(128, 201, 50);
+    color: $green-two;
   }
 
   .preview__card--nav li {
-    border-color: rgb(188, 254, 82);
+    border-color: $green-three;
   }
 
   .preview__card--nav .pIcon {
-    color: rgb(128, 201, 50);
+    color: $green-two;
   }
 }
 
 .palette6 {
   .preview__card--title {
-    border-color: rgb(249, 148, 6);
+    border-color: $orange-one;
   }
 
   .preview__card--name {
-    color: rgb(249, 208, 125);
+    color: $orange-two;
   }
 
   .preview__card--nav li {
-    border-color: rgb(240, 124, 16);
+    border-color: $orange-three;
   }
 
   .preview__card--nav .pIcon {
-    color: rgb(249, 208, 125);
+    color: $orange-two;
   }
 }
 
