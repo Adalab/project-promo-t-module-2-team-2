@@ -18,7 +18,7 @@ function getImage(e) {
 
 function writeImage() {
   if(data.photo === ''){
-    profileImage.style.backgroundImage = 'url(../assets/images/preview-card-img.jpg)';
+    profileImage.style.backgroundImage = 'url(./assets/images/preview-card-img.jpg)';
   } else{
     profileImage.style.backgroundImage = data.photo;
   }
