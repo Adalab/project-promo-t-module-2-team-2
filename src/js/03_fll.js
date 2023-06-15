@@ -1,18 +1,6 @@
 'use strict';
 const cardLS = JSON.parse(localStorage.getItem('cardData'));
 
-let data = {
-  palette: '1',
-  name: previewName.textContent,
-  job: previewJob.textContent,
-  phone: '',
-  email: '',
-  linkedin: '',
-  github: '',
-  photo: '',
-};
-
-
 function init() {
   if (cardLS) {
     data = cardLS;
@@ -42,6 +30,8 @@ function renderPreview() {
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette5');
     previewCard.classList.remove('palette6');
+    radio1.checked = true;
+
   } else if (data.palette === '2') {
     previewCard.classList.add('palette2');
     previewCard.classList.remove('palette1');
@@ -49,6 +39,7 @@ function renderPreview() {
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette5');
     previewCard.classList.remove('palette6');
+     radio2.checked = true;
   } else if (data.palette === '3') {
     previewCard.classList.add('palette3');
     previewCard.classList.remove('palette2');
@@ -56,6 +47,7 @@ function renderPreview() {
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette5');
     previewCard.classList.remove('palette6');
+    radio3.checked = true;
   } else if (data.palette === '4') {
     previewCard.classList.add('palette4');
     previewCard.classList.remove('palette1');
@@ -63,6 +55,7 @@ function renderPreview() {
     previewCard.classList.remove('palette2');
     previewCard.classList.remove('palette5');
     previewCard.classList.remove('palette6');
+    radio4.checked = true;
   } else if (data.palette === '5') {
     previewCard.classList.add('palette5');
     previewCard.classList.remove('palette1');
@@ -70,6 +63,7 @@ function renderPreview() {
     previewCard.classList.remove('palette2');
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette6');
+    radio5.checked = true;
   } else if (data.palette === '6') {
     previewCard.classList.add('palette6');
     previewCard.classList.remove('palette1');
@@ -77,6 +71,7 @@ function renderPreview() {
     previewCard.classList.remove('palette2');
     previewCard.classList.remove('palette4');
     previewCard.classList.remove('palette5');
+    radio6.checked = true;
   }
 }
 

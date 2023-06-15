@@ -47,3 +47,13 @@ const inputsValues = [
   githubInput,
 ];
 const twitterLink = document.querySelector('.url-twitter');
+let data = {
+  palette: '1',
+  name: previewName.textContent,
+  job: previewJob.textContent,
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
+};

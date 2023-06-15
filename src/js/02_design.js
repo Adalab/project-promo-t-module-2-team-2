@@ -26,31 +26,37 @@ function clickRadio1() {
   remove();
   previewCard.classList.add('palette1');
   data.palette = '1';
+  localStorage.setItem('cardData', JSON.stringify(data));
 }
 function clickRadio2() {
   remove();
   previewCard.classList.add('palette2');
   data.palette = '2';
+  localStorage.setItem('cardData', JSON.stringify(data));
 }
 function clickRadio3() {
   remove();
   previewCard.classList.add('palette3');
   data.palette = '3';
+  localStorage.setItem('cardData', JSON.stringify(data));
 }
 function clickRadio4() {
   remove();
   previewCard.classList.add('palette4');
   data.palette = '4';
+  localStorage.setItem('cardData', JSON.stringify(data));
 }
 function clickRadio5() {
   remove();
   previewCard.classList.add('palette5');
   data.palette = '5';
+  localStorage.setItem('cardData', JSON.stringify(data));
 }
 function clickRadio6() {
   remove();
   previewCard.classList.add('palette6');
   data.palette = '6';
+  localStorage.setItem('cardData', JSON.stringify(data));
 }
 
 radio1.addEventListener('click', clickRadio1);
