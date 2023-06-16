@@ -4,7 +4,7 @@
 function remove() {
   if (previewCard.classList.contains('palette1')) {
     previewCard.classList.remove('palette1');
-    radio1.checked = true;
+    //radio1.checked = true;
   } else if (previewCard.classList.contains('palette2')) {
     previewCard.classList.remove('palette2');
     
